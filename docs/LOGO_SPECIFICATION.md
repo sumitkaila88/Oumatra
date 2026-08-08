@@ -19,7 +19,7 @@ The corrected master symbol uses a square `240 × 240` viewBox with the artwork 
 - The dot diameter is `8` SVG units and defines the internal measurement unit `x`.
 - Light-surface artwork uses Deep Teal and Warm Peach. Dark-surface artwork changes teal elements to Ivory while retaining Warm Peach.
 
-The corrected silhouette follows the approved broad circular composition rather than a tall oval. Every production variant derives from the same dimensional master. Each crescent has a directionally shaded face, fine light-facing rim, darker trailing edge and lower-right cast shadow. The waveform and silence dots use the same raised-surface filter at a smaller visual scale. The shading changes lighting only; it does not alter the approved geometry or introduce a religious cue, infinity form, letter O construction, or technology motif.
+The corrected silhouette follows the approved broad circular composition rather than a tall oval. Every production variant derives from the same dimensional master. Each crescent is divided into three nested curved bands by two transparent 2.6-unit cut lines. The retained middle curve is constructed as a sharp ridge: a 3.8-unit lighter plane and opposing 3.8-unit darker plane meet at a fine 0.9-unit crest. This contrast creates physical elevation without changing the approved outer geometry or introducing a religious cue, infinity form, letter O construction, or technology motif.
 
 ## Wordmark construction
 

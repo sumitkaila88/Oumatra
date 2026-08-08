@@ -13,7 +13,7 @@ The symbol may stand alone when OUMATRA is already identified by context, in com
 - **Photography:** Place the logo only over calm, even-toned areas with strong contrast. Use an approved solid field when the image is busy.
 - **Other palette colours:** Verify contrast at the actual output size. Do not recolour individual logo parts to force a match.
 
-The production SVGs include a built-in dimensional rendering that follows the approved reference: restrained face shading, fine edge highlights, directional cast shadows and a soft wordmark halo. These are lighting effects derived from the locked colours, not additional brand colours or a decorative gradient treatment. Use the assets as supplied; do not add another shadow, glow, bevel or CSS filter. Monochrome variants retain one base colour while using opacity-based light and shadow to preserve the same raised construction.
+The production SVGs use a three-band crescent construction: each side contains three nested curved colour bands separated by two genuinely transparent curved cuts. The middle band has a sharp central ridge with a lighter plane on its left and a darker plane on its right, creating the chiseled metallic depth. A restrained cast shadow and soft wordmark depth remain embedded in the asset. Use the assets as supplied; do not add another shadow, glow, bevel or CSS filter.
 
 ## Colour roles
 

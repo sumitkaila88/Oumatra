@@ -9,39 +9,45 @@ const depthDefs = ({ left = teal, right = peach, mono = false, compact = false }
   const lightSurface = left === ivory;
   const leftLight = lightSurface ? "#FFFDF9" : "#397582";
   const leftDark = lightSurface ? "#C9C3BA" : "#062A33";
-  const rightLight = mono ? leftLight : "#E9AA8D";
   const rightDark = mono ? leftDark : "#A85E45";
   return `
   <defs>
-    <linearGradient id="left-face" x1="0" y1="0" x2="1" y2="1"><stop stop-color="${leftLight}"/><stop offset=".18" stop-color="${left}"/><stop offset=".72" stop-color="${left}"/><stop offset="1" stop-color="${leftDark}"/></linearGradient>
-    <linearGradient id="right-face" x1="0" y1="0" x2="1" y2="1"><stop stop-color="${rightLight}"/><stop offset=".18" stop-color="${right}"/><stop offset=".72" stop-color="${right}"/><stop offset="1" stop-color="${rightDark}"/></linearGradient>
+    <radialGradient id="left-face"><stop stop-color="${left}"/><stop offset=".7" stop-color="${left}"/><stop offset="1" stop-color="${leftDark}"/></radialGradient>
+    <radialGradient id="right-face"><stop stop-color="${right}"/><stop offset=".7" stop-color="${right}"/><stop offset="1" stop-color="${rightDark}"/></radialGradient>
     <linearGradient id="word-face" x1="0" y1="0" x2="0" y2="1"><stop stop-color="${leftLight}"/><stop offset=".2" stop-color="${left}"/><stop offset=".72" stop-color="${left}"/><stop offset="1" stop-color="${leftDark}"/></linearGradient>
     <linearGradient id="word-highlight" x1="0" y1="0" x2="1" y2="1"><stop stop-color="${leftLight}"/><stop offset="1" stop-color="${left}"/></linearGradient>
     <linearGradient id="word-shadow" x1="0" y1="0" x2="1" y2="1"><stop stop-color="${left}"/><stop offset="1" stop-color="${leftDark}"/></linearGradient>
-    <filter id="raised" x="-30%" y="-30%" width="170%" height="180%"><feDropShadow dx="${compact ? ".7" : "2.2"}" dy="${compact ? "1" : "3.2"}" stdDeviation="${compact ? ".45" : "1.25"}" flood-color="#061C22" flood-opacity=".38"/></filter>
+    <filter id="raised" x="-30%" y="-30%" width="170%" height="180%"><feDropShadow dx="0" dy="${compact ? ".5" : "1.4"}" stdDeviation="${compact ? ".35" : ".9"}" flood-color="#061C22" flood-opacity=".3"/></filter>
     <filter id="word-depth" x="-8%" y="-20%" width="116%" height="150%"><feGaussianBlur in="SourceAlpha" stdDeviation="2" result="glowAlpha"/><feFlood flood-color="${left}" flood-opacity=".14"/><feComposite in2="glowAlpha" operator="in" result="glow"/><feDropShadow dx="1.6" dy="2.4" stdDeviation="1.1" flood-color="#061C22" flood-opacity=".38"/><feMerge><feMergeNode in="glow"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <mask id="left-split"><rect width="240" height="240" fill="#fff"/><path d="${leftSplitOuter}" fill="none" stroke="#000" stroke-width="2.6"/><path d="${leftSplitInner}" fill="none" stroke="#000" stroke-width="2.6"/></mask>
+    <mask id="right-split"><rect width="240" height="240" fill="#fff"/><path d="${rightSplitOuter}" fill="none" stroke="#000" stroke-width="2.6"/><path d="${rightSplitInner}" fill="none" stroke="#000" stroke-width="2.6"/></mask>
   </defs>`;
 };
 
 const leftCrescent = "M104 24C58 34 30 70 30 120s28 86 74 96C76 190 58 157 58 120s18-70 46-96Z";
 const rightCrescent = "M136 24c46 10 74 46 74 96s-28 86-74 96c28-26 46-59 46-96s-18-70-46-96Z";
+const leftSplitOuter = "M104 24C62 38 39 74 39 120s23 82 65 96";
+const leftSplitInner = "M104 24C72 47 49 80 49 120s23 73 55 96";
+const rightSplitOuter = "M136 24c42 14 65 50 65 96s-23 82-65 96";
+const rightSplitInner = "M136 24c32 23 55 56 55 96s-23 73-55 96";
+const leftMiddleCurve = "M104 24C67 42 44 76 44 120s23 78 60 96";
+const rightMiddleCurve = "M136 24c37 18 60 52 60 96s-23 78-60 96";
 
 function symbol({ left = teal, right = peach, mono = false, transform = "translate(0 18) scale(1 .85)" } = {}) {
   const waveLeft = mono ? left : teal;
   const waveRight = mono ? right : peach;
-  const lightSurface = left === ivory;
-  const leftLight = lightSurface ? "#FFFDF9" : "#397582";
-  const leftDark = lightSurface ? "#C9C3BA" : "#062A33";
+  const leftLight = left === ivory ? "#FFFDF9" : "#397582";
+  const leftDark = left === ivory ? "#C9C3BA" : "#062A33";
   const rightLight = mono ? leftLight : "#E9AA8D";
   const rightDark = mono ? leftDark : "#A85E45";
   return `<g transform="${transform}">
     <g filter="url(#raised)">
-      <path d="${leftCrescent}" fill="${leftDark}" transform="translate(2.6 3.2)"/>
-      <path d="${rightCrescent}" fill="${rightDark}" transform="translate(2.6 3.2)"/>
-      <path d="${leftCrescent}" fill="url(#left-face)" stroke="${leftDark}" stroke-width="1.35"/>
-      <path d="${rightCrescent}" fill="url(#right-face)" stroke="${rightDark}" stroke-width="1.35"/>
-      <path d="${leftCrescent}" fill="none" stroke="${leftLight}" stroke-opacity=".8" stroke-width="1.15" transform="translate(-.8 -.8)"/>
-      <path d="${rightCrescent}" fill="none" stroke="${rightLight}" stroke-opacity=".85" stroke-width="1.15" transform="translate(-.8 -.8)"/>
+      <path d="${leftCrescent}" fill="${left}" mask="url(#left-split)"/>
+      <path d="${rightCrescent}" fill="${right}" mask="url(#right-split)"/>
+      <g fill="none" stroke-linecap="butt">
+        <path d="${leftMiddleCurve}" stroke="${leftLight}" stroke-opacity=".9" stroke-width="3.8" transform="translate(-1.7 0)"/><path d="${leftMiddleCurve}" stroke="${leftDark}" stroke-opacity=".88" stroke-width="3.8" transform="translate(1.7 0)"/><path d="${leftMiddleCurve}" stroke="${leftLight}" stroke-opacity=".96" stroke-width=".9"/>
+        <path d="${rightMiddleCurve}" stroke="${rightLight}" stroke-opacity=".9" stroke-width="3.8" transform="translate(-1.7 0)"/><path d="${rightMiddleCurve}" stroke="${rightDark}" stroke-opacity=".88" stroke-width="3.8" transform="translate(1.7 0)"/><path d="${rightMiddleCurve}" stroke="${rightLight}" stroke-opacity=".96" stroke-width=".9"/>
+      </g>
       <g fill="none" stroke-linecap="round">
         <path d="M82 112v16" stroke="${waveLeft}" stroke-width="3"/>
         <path d="M91 102v36" stroke="${waveLeft}" stroke-width="4"/>
