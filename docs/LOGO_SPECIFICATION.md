@@ -1,39 +1,53 @@
 # OUMATRA Logo Specification
 
-Version 1 · Production geometry
+Version 1 · Corrected production geometry
 
 ## Source and intent
 
-The supplied brand-kit concept and the locked direction in `BRAND_DECISIONS.md` are the source of truth. The production SVGs are a manual geometric interpretation, not an automatic raster trace. They preserve the approved relationship between opposing organic forms, sound, and silence while removing texture, lighting, mockup distortion, and raster noise.
+The supplied approved brand board and cropped lockup references, together with `BRAND_DECISIONS.md`, are the source of truth. The corrected production SVGs are a close manual reconstruction—not an automatic raster trace, font substitution, or new interpretation. They remove only raster noise, lighting, mockup perspective, and illustrative texture.
 
 ## Symbol construction
 
-The master symbol uses a `200 × 240` viewBox.
+The corrected master symbol uses a square `240 × 240` viewBox. The earlier `200 × 240` construction was rejected because it made the emblem too oval.
 
-- A vertical axis runs through `x = 100`.
-- The opposing outer forms share mirrored endpoints and curve proportions. They remain visually open rather than completing a literal O.
-- The waveform contains eight rounded vertical bars. Five Deep Teal bars move toward the central axis; three Warm Peach bars move away from it. Their differing heights express vibration without adding decorative noise.
-- Upper and lower silence dots are centered on the axis at `y = 10` and `y = 230` with radius `4`.
-- The master dot diameter is `8` SVG units and defines the internal measurement unit `x`.
-- The full-colour light-surface symbol uses Deep Teal and Warm Peach. The dark-surface adaptation changes Deep Teal elements to Ivory while retaining Warm Peach.
+- The vertical axis runs through `x = 120`.
+- Crescent tips extend from `y = 24` to `y = 216`; their widest points sit at `x = 30` and `x = 210`. The resulting silhouette is balanced and near-circular.
+- The outer forms share mirrored endpoints and curve proportions while remaining visually open rather than completing a literal O.
+- The waveform contains nine rounded bars: five Deep Teal and four Warm Peach.
+- The tallest teal bar runs from `y = 38` to `y = 202`; the adjacent peach bar runs from `y = 58` to `y = 182`.
+- Silence dots are centered at `(120, 12)` and `(120, 228)` with radius `4`.
+- The dot diameter is `8` SVG units and defines the internal measurement unit `x`.
+- Light-surface artwork uses Deep Teal and Warm Peach. Dark-surface artwork changes teal elements to Ivory while retaining Warm Peach.
 
-The outer contours are intentionally smoother and more symmetrical than the concept image because the reference contains illustrative depth and perspective that would not scale cleanly. No gradient, shadow, highlight, religious cue, infinity form, or AI/technology motif has been introduced.
+The corrected silhouette follows the approved circular/vertical composition more closely. No gradient, shadow, religious cue, infinity form, letter O construction, or technology motif has been introduced.
 
 ## Wordmark construction
 
-The production wordmark is restrained uppercase monoline vector geometry with generous spacing, reflecting the geometric sans-serif direction in the reference without introducing a radically stylized custom face. Letterforms are SVG geometry rather than an embedded font. The tagline variants use a conservative system-sans SVG text fallback; use the non-tagline lockups when exact cross-environment tagline rendering cannot be guaranteed.
+The OUMATRA wordmark is custom vector-path geometry, not editable text and not a generic substituted font. Its thin monoline construction, letter proportions, and generous spacing follow the approved reference. Both A letters are crossbar-free and contain the approved Warm Peach dot low in the counter.
 
-Do not recreate the wordmark with website type, edit its spacing, or substitute individual letters.
+The horizontal master uses a `1080 × 220` viewBox. The symbol occupies approximately `216 × 216` units. The wordmark begins at `x = 270`, leaving a 46-unit visual gap after the symbol. Wordmark cap construction is 80 units high with a 4.5-unit stroke.
+
+Do not recreate the wordmark with website type, edit its spacing, replace its A treatment, or substitute individual letters.
+
+## Tagline construction
+
+The tagline uses a restrained serif treatment (`Georgia` with Times fallback) to match the approved elegant-serif character, replacing the rejected sans-serif treatment. “Beyond Silence.” is Warm Peach; “From Sound.” is Deep Teal. Thin horizontal rules flank the centered tagline.
+
+- Horizontal lockup: 24-unit tagline below the wordmark in a `1080 × 280` field.
+- Stacked lockup: 28-unit tagline below the wordmark in an `860 × 540` field.
+- Divider rules use a 1.5-unit stroke and align around the tagline baseline area.
+
+Because the tagline remains SVG text, use a non-tagline lockup when exact cross-platform serif rendering cannot be guaranteed. The OUMATRA wordmark itself is always vector geometry.
 
 ## Clear space
 
-`x` equals the diameter of a silence dot in the symbol (`8` units in the symbol master).
+`x` equals one silence-dot diameter (`8` units in the symbol master).
 
-- Full lockups: minimum clear space of `4x` on all sides.
-- Symbol only: minimum clear space of `3x` on all sides.
-- Favicon and social-avatar containers: their supplied internal padding is already approved; do not crop it further.
+- Full lockups: at least `4x` on every side.
+- Symbol only: at least `3x` on every side.
+- Favicon and social containers: their supplied padding is already approved; do not crop it further.
 
-Clear space is measured from the outermost visible artwork, not from the SVG viewBox edge.
+Measure clear space from the outermost visible artwork, not the SVG viewBox edge.
 
 ## Minimum sizes
 
@@ -46,14 +60,15 @@ Clear space is measured from the outermost visible artwork, not from the SVG vie
 | Full-detail symbol | 32 px high | 8 mm high |
 | Simplified favicon | 16 px | Not for print |
 
-Below the listed sizes, use a simpler approved variant rather than allowing details or the tagline to become illegible.
+Below these sizes, use the simpler approved variant rather than allowing detail or the tagline to become illegible.
 
 ## Variant inventory
 
 - `oumatra-logo-horizontal.svg` — primary horizontal lockup
-- `oumatra-logo-horizontal-tagline.svg` — horizontal lockup with tagline
+- `oumatra-logo-horizontal-tagline.svg` — horizontal lockup with tagline and rules
+- `oumatra-logo-horizontal-on-dark.svg` — adapted full-colour horizontal lockup for dark surfaces
 - `oumatra-logo-stacked.svg` — primary stacked lockup
-- `oumatra-logo-stacked-tagline.svg` — stacked lockup with tagline
+- `oumatra-logo-stacked-tagline.svg` — stacked lockup with tagline and rules
 - `oumatra-symbol.svg` — full-colour symbol for light surfaces
 - `oumatra-symbol-on-dark.svg` — adapted full-colour symbol for dark surfaces
 - `oumatra-symbol-dark.svg` — Deep Teal single-colour symbol
@@ -61,4 +76,4 @@ Below the listed sizes, use a simpler approved variant rather than allowing deta
 - `oumatra-logo-monochrome-dark.svg` — Deep Teal single-colour horizontal lockup
 - `oumatra-logo-monochrome-light.svg` — Ivory single-colour horizontal lockup
 
-All SVG files have explicit viewBoxes, contain no raster image, avoid external references and embedded font files, and use minimal paths/primitives. Monochrome variants use `currentColor` with an approved default root colour so they work when opened directly.
+All files have explicit viewBoxes, contain no raster images, and avoid external references or embedded font files. Monochrome variants use `currentColor` with an approved default so they render directly.

@@ -14,7 +14,7 @@ export default function Home() {
               src="/brand/logo/oumatra-logo-horizontal.svg"
               alt=""
               aria-hidden="true"
-              width={910}
+              width={1080}
               height={220}
               priority
             />
@@ -27,8 +27,8 @@ export default function Home() {
             className="hero-logo"
             src="/brand/logo/oumatra-logo-stacked-tagline.svg"
             alt="OUMATRA — From Sound. Beyond Silence."
-            width={720}
-            height={520}
+            width={860}
+            height={540}
             priority
           />
           <p className="eyebrow">A global parent company</p>
@@ -71,7 +71,7 @@ export default function Home() {
             className="footer-logo"
             src="/brand/logo/oumatra-logo-monochrome-light.svg"
             alt="OUMATRA"
-            width={910}
+            width={1080}
             height={220}
           />
           <p>From Sound. Beyond Silence.</p>

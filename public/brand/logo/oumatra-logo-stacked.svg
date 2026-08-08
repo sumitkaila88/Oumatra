@@ -1,10 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 470" role="img" aria-labelledby="title">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 470" role="img" aria-labelledby="title">
   <title id="title">OUMATRA stacked logo</title>
-  <g transform="translate(230 8)">
-    <path fill="#0E3D4A" d="M82 24C42 39 22 75 22 120s20 81 60 96C55 188 46 153 46 120s9-68 36-96Z"/><path fill="#D08A6A" d="M118 24c40 15 60 51 60 96s-20 81-60 96c27-28 36-63 36-96s-9-68-36-96Z"/>
-    <g fill="#0E3D4A"><rect x="70" y="111" width="4" height="18" rx="2"/><rect x="78" y="99" width="4" height="42" rx="2"/><rect x="86" y="82" width="4" height="76" rx="2"/><rect x="94" y="61" width="4" height="118" rx="2"/><rect x="102" y="49" width="4" height="142" rx="2"/></g><g fill="#D08A6A"><rect x="110" y="72" width="4" height="96" rx="2"/><rect x="118" y="90" width="4" height="60" rx="2"/><rect x="126" y="104" width="4" height="32" rx="2"/></g><circle cx="100" cy="10" r="4" fill="#0E3D4A"/><circle cx="100" cy="230" r="4" fill="#0E3D4A"/>
-  </g>
-  <g transform="translate(5 270)" fill="none" stroke="#0E3D4A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
-    <ellipse cx="45" cy="80" rx="28" ry="39"/><path d="M106 42v50c0 17 9 27 25 27s25-10 25-27V42M215 119V42l28 52 28-52v77M328 119l27-77 27 77m-43-30h31M422 42h61m-30 0v77M527 119V42h27c18 0 27 9 27 23s-9 23-27 23h-27m25 0 32 31M620 119l27-77 27 77m-43-30h31"/>
-  </g>
+  <g transform="translate(310 12)"><path fill="#0E3D4A" d="M104 24C58 34 30 70 30 120s28 86 74 96C76 190 58 157 58 120s18-70 46-96Z"/><path fill="#D08A6A" d="M136 24c46 10 74 46 74 96s-28 86-74 96c28-26 46-59 46-96s-18-70-46-96Z"/><g fill="#0E3D4A"><rect x="80" y="112" width="4" height="16" rx="2"/><rect x="89" y="102" width="4" height="36" rx="2"/><rect x="98" y="88" width="4" height="64" rx="2"/><rect x="107" y="68" width="4" height="104" rx="2"/><rect x="116" y="38" width="4" height="164" rx="2"/></g><g fill="#D08A6A"><rect x="124" y="58" width="4" height="124" rx="2"/><rect x="133" y="78" width="4" height="84" rx="2"/><rect x="142" y="96" width="4" height="48" rx="2"/><rect x="151" y="110" width="4" height="20" rx="2"/></g><circle cx="120" cy="12" r="4" fill="#0E3D4A"/><circle cx="120" cy="228" r="4" fill="#0E3D4A"/></g>
+  <g transform="translate(50 280)" fill="none" stroke="#0E3D4A" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="35" cy="70" rx="28" ry="40"/><path d="M105 30v52c0 20 10 30 28 30s28-10 28-30V30M220 110V30l32 62 32-62v80M340 110l30-80 30 80M452 30h68m-34 0v80M575 110V30h28c20 0 30 10 30 24s-10 24-30 24h-28m27 0 38 32M690 110l30-80 30 80"/></g><g fill="#D08A6A"><circle cx="420" cy="372" r="5"/><circle cx="770" cy="372" r="5"/></g>
 </svg>

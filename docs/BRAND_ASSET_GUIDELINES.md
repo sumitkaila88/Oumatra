@@ -9,7 +9,7 @@ The symbol may stand alone when OUMATRA is already identified by context, in com
 ## Backgrounds
 
 - **Ivory or light neutral surfaces:** Use the full-colour primary or Deep Teal monochrome asset.
-- **Deep Teal, Indigo, or other sufficiently dark surfaces:** Use the dark-background symbol adaptation or Ivory monochrome asset.
+- **Deep Teal, Indigo, or other sufficiently dark surfaces:** Use the dark-background symbol adaptation, full horizontal on-dark lockup, or Ivory monochrome asset.
 - **Photography:** Place the logo only over calm, even-toned areas with strong contrast. Use an approved solid field when the image is busy.
 - **Other palette colours:** Verify contrast at the actual output size. Do not recolour individual logo parts to force a match.
 
@@ -35,11 +35,11 @@ Functional tokens in `app/globals.css` map these masters to backgrounds, text, b
 | Navigation / UI | Manrope | 500–700 | Clear, compact, sentence case |
 | Eyebrow / label | Manrope | 700 | Uppercase, `0.12em–0.20em` tracking |
 
-Do not typeset a replacement OUMATRA wordmark using either family. Use the supplied logo asset.
+Do not typeset a replacement OUMATRA wordmark using either family. The approved wordmark is custom vector geometry with crossbar-free, Warm Peach-dot A forms; always use the supplied asset.
 
 ## Favicon
 
-The favicon uses the approved outer forms and silence dots with a simplified five-bar waveform. The reduction from eight bars protects the central sound gesture at 16 px. Use `favicon.svg` where supported, with the supplied ICO and PNG fallbacks. Do not derive another micro-mark.
+The favicon uses the approved outer forms and silence dots with a simplified five-bar waveform. The reduction from the nine-bar master protects the central sound gesture at 16 px. Use `favicon.svg` where supported, with the supplied ICO and PNG fallbacks. Do not derive another micro-mark.
 
 ## Social avatar
 

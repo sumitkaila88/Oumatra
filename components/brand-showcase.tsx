@@ -12,8 +12,8 @@ export function BrandShowcase() {
             <Image
               src="/brand/logo/oumatra-logo-horizontal-tagline.svg"
               alt="OUMATRA — From Sound. Beyond Silence."
-              width={910}
-              height={260}
+              width={1080}
+              height={280}
               priority
             />
             <figcaption>Primary horizontal lockup with tagline</figcaption>
@@ -23,7 +23,7 @@ export function BrandShowcase() {
             <Image
               src="/brand/logo/oumatra-symbol.svg"
               alt="OUMATRA symbol"
-              width={200}
+              width={240}
               height={240}
             />
             <figcaption>Full colour · light surface</figcaption>
@@ -34,7 +34,7 @@ export function BrandShowcase() {
               src="/brand/logo/oumatra-symbol-on-dark.svg"
               alt=""
               aria-hidden="true"
-              width={200}
+              width={240}
               height={240}
             />
             <figcaption>Full colour · dark surface</figcaption>

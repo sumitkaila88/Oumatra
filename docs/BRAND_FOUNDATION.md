@@ -121,7 +121,7 @@ These exact values are locked and implemented as reusable CSS and Tailwind token
 
 The approved conceptual direction is a mark composed of opposing organic, crescent-like forms surrounding a central vertical sound-wave motif, with small upper and lower dots. It represents sound and silence.
 
-The supplied brand-kit image is conceptual artwork rather than a master vector. The v1 production symbol reconstructs its approved direction with clean SVG geometry: two opposing organic outer forms, an eight-bar central waveform, and small upper and lower dots. It does not auto-trace the raster image. Do not replace it with an infinity symbol, generic technology icon, letter O icon, religious symbol, crescent/star, architecture/building mark, or generated symbol.
+The supplied brand-kit image is conceptual artwork rather than a master vector. The corrected v1 production symbol closely reconstructs its approved direction with clean SVG geometry: two opposing organic outer forms, a nine-bar central waveform, and small upper and lower dots in a balanced square field. It does not auto-trace the raster image. Do not replace it with an infinity symbol, generic technology icon, letter O icon, religious symbol, crescent/star, architecture/building mark, or generated symbol.
 
 Production assets live under `public/brand/`. Detailed construction, usage, minimum-size, and background rules are defined in [LOGO_SPECIFICATION.md](LOGO_SPECIFICATION.md) and [BRAND_ASSET_GUIDELINES.md](BRAND_ASSET_GUIDELINES.md).
 
