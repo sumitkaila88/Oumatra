@@ -13,8 +13,8 @@ The corrected master symbol uses a square `240 × 240` viewBox with the artwork 
 - The vertical axis runs through `x = 120`.
 - Before optical correction, crescent tips run from `y = 24` to `y = 216` and the widest points sit at `x = 30` and `x = 210`. The master applies `scale(1, 0.85)` around the field, producing a visible crescent body approximately 180 units wide by 163 units high.
 - The outer forms share mirrored endpoints and curve proportions while remaining visually open rather than completing a literal O.
-- The waveform contains nine chiseled bars: five teal and four copper. Heights progress symmetrically as `20, 40, 70, 110, 184, 110, 70, 40, 20` units and widths as `3, 4, 5, 6, 8, 6, 5, 4, 3` units.
-- The central teal bar is centered exactly on `x = 120`, runs from `y = 28` to `y = 212`, and is deliberately taller and thicker than every surrounding bar.
+- The waveform contains nine chiseled, tapered spindles rather than rectangular bars. Heights progress symmetrically as `18, 38, 68, 108, 198, 108, 68, 38, 18` units and widths as `2.5, 3, 3.5, 4.5, 5, 4.5, 3.5, 3, 2.5` units.
+- The central teal spindle is centered exactly on `x = 120`, runs from `y = 21` to `y = 219`, and reaches close to the silence dots while remaining visually separate from them.
 - Silence dots are centered at `(120, 12)` and `(120, 228)` with radius `4.5`. Each is a single vector shape with a darker inset radial face and inner-bevel stroke.
 - The dot diameter is `9` SVG units and defines the internal measurement unit `x`.
 - Light-surface artwork uses Deep Teal and Warm Peach. Dark-surface artwork changes teal elements to Ivory while retaining Warm Peach.

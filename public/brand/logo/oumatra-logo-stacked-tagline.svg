@@ -6,21 +6,21 @@
     <linearGradient id="word-shadow" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1A4D54"/><stop offset="1" stop-color="#1A4D54"/></linearGradient>
     <filter id="raised" x="-30%" y="-30%" width="170%" height="180%"><feDropShadow dx="2" dy="3" stdDeviation="2" flood-color="#000000" flood-opacity=".46"/></filter>
     <filter id="word-depth" x="-8%" y="-20%" width="116%" height="150%"><feGaussianBlur in="SourceAlpha" stdDeviation="2" result="glowAlpha"/><feFlood flood-color="#1A4D54" flood-opacity=".14"/><feComposite in2="glowAlpha" operator="in" result="glow"/><feDropShadow dx="1.6" dy="2.4" stdDeviation="1.1" flood-color="#061C22" flood-opacity=".38"/><feMerge><feMergeNode in="glow"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-    <filter id="dot-inset" x="-80%" y="-80%" width="260%" height="260%"><feDropShadow dx="-.7" dy="-.8" stdDeviation=".45" flood-color="#438A94" flood-opacity=".28"/><feDropShadow dx="1" dy="1.4" stdDeviation=".7" flood-color="#000000" flood-opacity=".72"/></filter>
-    <radialGradient id="dot-face" cx="36%" cy="32%" r="70%" fx="32%" fy="28%"><stop stop-color="#1A4D54"/><stop offset=".58" stop-color="#1A4D54"/><stop offset="1" stop-color="#0B292D"/></radialGradient>
-    <symbol id="left-wave-bar" viewBox="0 0 8 100"><path d="M4 0H2.5C1.1 0 0 1.1 0 2.5v95C0 98.9 1.1 100 2.5 100H4Z" fill="#438A94"/><path d="M4 0h1.5C6.9 0 8 1.1 8 2.5v95C8 98.9 6.9 100 5.5 100H4Z" fill="#1A4D54"/></symbol>
-    <symbol id="right-wave-bar" viewBox="0 0 8 100"><path d="M4 0H2.5C1.1 0 0 1.1 0 2.5v95C0 98.9 1.1 100 2.5 100H4Z" fill="#D98D73"/><path d="M4 0h1.5C6.9 0 8 1.1 8 2.5v95C8 98.9 6.9 100 5.5 100H4Z" fill="#8C4F3E"/></symbol>
+    <filter id="dot-inset" x="-80%" y="-80%" width="260%" height="260%"><feDropShadow dx="0" dy="1.2" stdDeviation=".65" flood-color="#000000" flood-opacity=".55"/></filter>
+    <radialGradient id="dot-face" cx="34%" cy="30%" r="72%" fx="30%" fy="26%"><stop stop-color="#438A94"/><stop offset=".52" stop-color="#1A4D54"/><stop offset="1" stop-color="#1A4D54"/></radialGradient>
+    <symbol id="left-wave-bar" viewBox="0 0 8 100" preserveAspectRatio="none"><path d="M4 0C3.2 10 0 29 0 50s3.2 40 4 50Z" fill="#438A94"/><path d="M4 0c.8 10 4 29 4 50s-3.2 40-4 50Z" fill="#1A4D54"/></symbol>
+    <symbol id="right-wave-bar" viewBox="0 0 8 100" preserveAspectRatio="none"><path d="M4 0C3.2 10 0 29 0 50s3.2 40 4 50Z" fill="#D98D73"/><path d="M4 0c.8 10 4 29 4 50s-3.2 40-4 50Z" fill="#8C4F3E"/></symbol>
   </defs>
   <title id="title">OUMATRA stacked logo with tagline</title>
   <g transform="translate(310 14) scale(1 .88)">
     <g filter="url(#raised)">
       <path d="M104 24C58 34 30 70 30 120C30 170 58 206 104 216C67 198 44 164 44 120C44 76 67 42 104 24Z" fill="#438A94"/><path d="M104 24C67 42 44 76 44 120C44 164 67 198 104 216C76 190 58 157 58 120C58 83 76 50 104 24Z" fill="#1A4D54"/>
       <path d="M136 24C164 50 182 83 182 120C182 157 164 190 136 216C173 198 196 164 196 120C196 76 173 42 136 24Z" fill="#D98D73"/><path d="M136 24C173 42 196 76 196 120C196 164 173 198 136 216C182 206 210 170 210 120C210 70 182 34 136 24Z" fill="#8C4F3E"/>
-      <use href="#left-wave-bar" x="80.5" y="110" width="3" height="20"/><use href="#left-wave-bar" x="89" y="100" width="4" height="40"/><use href="#left-wave-bar" x="97.5" y="85" width="5" height="70"/><use href="#left-wave-bar" x="106" y="65" width="6" height="110"/>
-      <use href="#left-wave-bar" x="116" y="28" width="8" height="184"/>
-      <use href="#right-wave-bar" x="128" y="65" width="6" height="110"/><use href="#right-wave-bar" x="138.5" y="85" width="5" height="70"/><use href="#right-wave-bar" x="148" y="100" width="4" height="40"/><use href="#right-wave-bar" x="156.5" y="110" width="3" height="20"/>
+      <use href="#left-wave-bar" x="82.75" y="111" width="2.5" height="18"/><use href="#left-wave-bar" x="91.5" y="101" width="3" height="38"/><use href="#left-wave-bar" x="100.25" y="86" width="3.5" height="68"/><use href="#left-wave-bar" x="108.75" y="66" width="4.5" height="108"/>
+      <use href="#left-wave-bar" x="117.5" y="21" width="5" height="198"/>
+      <use href="#right-wave-bar" x="126.75" y="66" width="4.5" height="108"/><use href="#right-wave-bar" x="136.25" y="86" width="3.5" height="68"/><use href="#right-wave-bar" x="145.5" y="101" width="3" height="38"/><use href="#right-wave-bar" x="154.75" y="111" width="2.5" height="18"/>
     </g>
-    <circle cx="120" cy="12" r="4.5" fill="url(#dot-face)" stroke="#0B292D" stroke-width="1.25" filter="url(#dot-inset)"/><circle cx="120" cy="228" r="4.5" fill="url(#dot-face)" stroke="#0B292D" stroke-width="1.25" filter="url(#dot-inset)"/>
+    <circle cx="120" cy="12" r="4.5" fill="url(#dot-face)" stroke="#1A4D54" stroke-width=".8" filter="url(#dot-inset)"/><circle cx="120" cy="228" r="4.5" fill="url(#dot-face)" stroke="#1A4D54" stroke-width=".8" filter="url(#dot-inset)"/>
   </g><g filter="url(#word-depth)">
     <g transform="translate(50 240) scale(1 .85) translate(1.2 1.5)" fill="none" stroke="url(#word-shadow)" stroke-width="5.4" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="35" cy="70" rx="34" ry="40"/><path d="M105 30v52c0 20 10 30 28 30s28-10 28-30V30M220 110V30l32 62 32-62v80M340 110l30-80 30 80M452 30h68m-34 0v80M575 110V30h28c20 0 30 10 30 24s-10 24-30 24h-28m27 0 38 32M690 110l30-80 30 80"/></g>
     <g transform="translate(50 240) scale(1 .85)" fill="none" stroke="url(#word-face)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="35" cy="70" rx="34" ry="40"/><path d="M105 30v52c0 20 10 30 28 30s28-10 28-30V30M220 110V30l32 62 32-62v80M340 110l30-80 30 80M452 30h68m-34 0v80M575 110V30h28c20 0 30 10 30 24s-10 24-30 24h-28m27 0 38 32M690 110l30-80 30 80"/></g>

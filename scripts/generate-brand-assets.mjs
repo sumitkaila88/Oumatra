@@ -18,10 +18,10 @@ const depthDefs = ({ left = teal, mono = false, compact = false } = {}) => {
     <linearGradient id="word-shadow" x1="0" y1="0" x2="1" y2="1"><stop stop-color="${left}"/><stop offset="1" stop-color="${leftDark}"/></linearGradient>
     <filter id="raised" x="-30%" y="-30%" width="170%" height="180%"><feDropShadow dx="${compact ? ".6" : "2"}" dy="${compact ? ".8" : "3"}" stdDeviation="${compact ? ".45" : "2"}" flood-color="#000000" flood-opacity=".46"/></filter>
     <filter id="word-depth" x="-8%" y="-20%" width="116%" height="150%"><feGaussianBlur in="SourceAlpha" stdDeviation="2" result="glowAlpha"/><feFlood flood-color="${left}" flood-opacity=".14"/><feComposite in2="glowAlpha" operator="in" result="glow"/><feDropShadow dx="1.6" dy="2.4" stdDeviation="1.1" flood-color="#061C22" flood-opacity=".38"/><feMerge><feMergeNode in="glow"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-    <filter id="dot-inset" x="-80%" y="-80%" width="260%" height="260%"><feDropShadow dx="-.7" dy="-.8" stdDeviation=".45" flood-color="${leftLight}" flood-opacity=".28"/><feDropShadow dx="1" dy="1.4" stdDeviation=".7" flood-color="#000000" flood-opacity=".72"/></filter>
-    <radialGradient id="dot-face" cx="36%" cy="32%" r="70%" fx="32%" fy="28%"><stop stop-color="${left}"/><stop offset=".58" stop-color="${leftDark}"/><stop offset="1" stop-color="${lightSurface ? "#8E8982" : "#0B292D"}"/></radialGradient>
-    <symbol id="left-wave-bar" viewBox="0 0 8 100"><path d="M4 0H2.5C1.1 0 0 1.1 0 2.5v95C0 98.9 1.1 100 2.5 100H4Z" fill="${leftLight}"/><path d="M4 0h1.5C6.9 0 8 1.1 8 2.5v95C8 98.9 6.9 100 5.5 100H4Z" fill="${leftDark}"/></symbol>
-    <symbol id="right-wave-bar" viewBox="0 0 8 100"><path d="M4 0H2.5C1.1 0 0 1.1 0 2.5v95C0 98.9 1.1 100 2.5 100H4Z" fill="${rightLight}"/><path d="M4 0h1.5C6.9 0 8 1.1 8 2.5v95C8 98.9 6.9 100 5.5 100H4Z" fill="${rightDark}"/></symbol>
+    <filter id="dot-inset" x="-80%" y="-80%" width="260%" height="260%"><feDropShadow dx="0" dy="1.2" stdDeviation=".65" flood-color="#000000" flood-opacity=".55"/></filter>
+    <radialGradient id="dot-face" cx="34%" cy="30%" r="72%" fx="30%" fy="26%"><stop stop-color="${leftLight}"/><stop offset=".52" stop-color="${left}"/><stop offset="1" stop-color="${leftDark}"/></radialGradient>
+    <symbol id="left-wave-bar" viewBox="0 0 8 100" preserveAspectRatio="none"><path d="M4 0C3.2 10 0 29 0 50s3.2 40 4 50Z" fill="${leftLight}"/><path d="M4 0c.8 10 4 29 4 50s-3.2 40-4 50Z" fill="${leftDark}"/></symbol>
+    <symbol id="right-wave-bar" viewBox="0 0 8 100" preserveAspectRatio="none"><path d="M4 0C3.2 10 0 29 0 50s3.2 40 4 50Z" fill="${rightLight}"/><path d="M4 0c.8 10 4 29 4 50s-3.2 40-4 50Z" fill="${rightDark}"/></symbol>
   </defs>`;
 };
 
@@ -35,11 +35,11 @@ function symbol({ left = teal, mono = false, transform = "translate(0 18) scale(
     <g filter="url(#raised)">
       <path d="${leftHighlight}" fill="${left === ivory ? "#FFFDF9" : "#438A94"}"/><path d="${leftShadow}" fill="${left === ivory ? "#BDB7AE" : "#1A4D54"}"/>
       <path d="${rightHighlight}" fill="${mono ? (left === ivory ? "#FFFDF9" : "#438A94") : "#D98D73"}"/><path d="${rightShadow}" fill="${mono ? (left === ivory ? "#BDB7AE" : "#1A4D54") : "#8C4F3E"}"/>
-      <use href="#left-wave-bar" x="80.5" y="110" width="3" height="20"/><use href="#left-wave-bar" x="89" y="100" width="4" height="40"/><use href="#left-wave-bar" x="97.5" y="85" width="5" height="70"/><use href="#left-wave-bar" x="106" y="65" width="6" height="110"/>
-      <use href="#left-wave-bar" x="116" y="28" width="8" height="184"/>
-      <use href="#right-wave-bar" x="128" y="65" width="6" height="110"/><use href="#right-wave-bar" x="138.5" y="85" width="5" height="70"/><use href="#right-wave-bar" x="148" y="100" width="4" height="40"/><use href="#right-wave-bar" x="156.5" y="110" width="3" height="20"/>
+      <use href="#left-wave-bar" x="82.75" y="111" width="2.5" height="18"/><use href="#left-wave-bar" x="91.5" y="101" width="3" height="38"/><use href="#left-wave-bar" x="100.25" y="86" width="3.5" height="68"/><use href="#left-wave-bar" x="108.75" y="66" width="4.5" height="108"/>
+      <use href="#left-wave-bar" x="117.5" y="21" width="5" height="198"/>
+      <use href="#right-wave-bar" x="126.75" y="66" width="4.5" height="108"/><use href="#right-wave-bar" x="136.25" y="86" width="3.5" height="68"/><use href="#right-wave-bar" x="145.5" y="101" width="3" height="38"/><use href="#right-wave-bar" x="154.75" y="111" width="2.5" height="18"/>
     </g>
-    <circle cx="120" cy="12" r="4.5" fill="url(#dot-face)" stroke="${left === ivory ? "#8E8982" : "#0B292D"}" stroke-width="1.25" filter="url(#dot-inset)"/><circle cx="120" cy="228" r="4.5" fill="url(#dot-face)" stroke="${left === ivory ? "#8E8982" : "#0B292D"}" stroke-width="1.25" filter="url(#dot-inset)"/>
+    <circle cx="120" cy="12" r="4.5" fill="url(#dot-face)" stroke="${left}" stroke-width=".8" filter="url(#dot-inset)"/><circle cx="120" cy="228" r="4.5" fill="url(#dot-face)" stroke="${left}" stroke-width=".8" filter="url(#dot-inset)"/>
   </g>`;
 }
 
