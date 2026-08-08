@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const grooveRadii = Array.from({ length: 25 }, (_, index) => 54 + index * 25);
 const signalLines = Array.from({ length: 15 }, (_, index) => index);
-const contourLines = Array.from({ length: 30 }, (_, index) => index);
-const softContourLines = Array.from({ length: 15 }, (_, index) => index);
+const contourLines = Array.from({ length: 24 }, (_, index) => index);
+const softContourLines = Array.from({ length: 12 }, (_, index) => index);
 
 function HeroBackdrop() {
   return (
@@ -35,9 +35,9 @@ function HeroBackdrop() {
         <filter id="crest-shadow" x="-10%" y="-30%" width="120%" height="160%">
           <feDropShadow dx="0" dy="-7" stdDeviation="13" floodColor="#0e3d4a" floodOpacity=".2" />
         </filter>
-        <clipPath id="left-wave-clip"><path d="M0 512C126 530 220 605 345 640C485 680 593 663 734 699V760H0Z" /></clipPath>
-        <clipPath id="right-wave-clip"><path d="M704 760C840 731 946 657 1050 610C1195 544 1307 514 1440 501V760Z" /></clipPath>
-        <clipPath id="middle-wave-clip"><path d="M0 642C178 650 266 714 429 711C568 708 626 675 744 680C874 685 932 726 1058 704C1201 679 1283 652 1440 679V760H0Z" /></clipPath>
+        <clipPath id="left-wave-clip"><path d="M0 606C137 619 244 674 374 700C503 726 612 706 748 728V760H0Z" /></clipPath>
+        <clipPath id="right-wave-clip"><path d="M692 760C845 743 966 696 1084 650C1215 609 1326 589 1440 580V760Z" /></clipPath>
+        <clipPath id="middle-wave-clip"><path d="M0 688C178 693 281 735 436 731C576 727 646 706 754 710C886 715 953 742 1071 729C1212 713 1306 695 1440 711V760H0Z" /></clipPath>
       </defs>
 
       <rect width="1440" height="760" fill="url(#hero-ivory)" />
@@ -46,33 +46,33 @@ function HeroBackdrop() {
         {grooveRadii.map((radius) => <circle key={radius} cx="720" cy="315" r={radius} />)}
       </g>
 
-      <g className="hero-backdrop__signals hero-backdrop__signals--left">
+      <g className="hero-backdrop__signals" stroke="url(#left-signal)">
         {signalLines.map((line) => {
-          const height = 260 - line * 16;
-          return <line key={line} x1={line * 10} x2={line * 10} y1={330 - height / 2} y2={330 + height / 2} />;
+          const height = 300 - line * 18;
+          return <line key={line} x1={2 + line * 11} x2={2 + line * 11} y1={390 - height / 2} y2={390 + height / 2} />;
         })}
       </g>
-      <g className="hero-backdrop__signals hero-backdrop__signals--right">
+      <g className="hero-backdrop__signals" stroke="url(#right-signal)">
         {signalLines.map((line) => {
-          const height = 260 - line * 16;
-          return <line key={line} x1={1440 - line * 10} x2={1440 - line * 10} y1={330 - height / 2} y2={330 + height / 2} />;
+          const height = 300 - line * 18;
+          return <line key={line} x1={1438 - line * 11} x2={1438 - line * 11} y1={390 - height / 2} y2={390 + height / 2} />;
         })}
       </g>
 
       <g filter="url(#crest-shadow)">
-        <path d="M0 512C126 530 220 605 345 640C485 680 593 663 734 699V760H0Z" fill="url(#terrain-deep)" />
-        <path d="M704 760C840 731 946 657 1050 610C1195 544 1307 514 1440 501V760Z" fill="url(#terrain-deep)" />
-        <path d="M0 642C178 650 266 714 429 711C568 708 626 675 744 680C874 685 932 726 1058 704C1201 679 1283 652 1440 679V760H0Z" fill="url(#terrain-mid)" opacity=".88" />
+        <path d="M0 606C137 619 244 674 374 700C503 726 612 706 748 728V760H0Z" fill="url(#terrain-deep)" />
+        <path d="M692 760C845 743 966 696 1084 650C1215 609 1326 589 1440 580V760Z" fill="url(#terrain-deep)" />
+        <path d="M0 688C178 693 281 735 436 731C576 727 646 706 754 710C886 715 953 742 1071 729C1212 713 1306 695 1440 711V760H0Z" fill="url(#terrain-mid)" opacity=".78" />
       </g>
 
       <g clipPath="url(#left-wave-clip)" className="hero-backdrop__contours">
-        {contourLines.map((line) => <path key={line} d={`M-20 ${514 + line * 7}C126 ${532 + line * 6.2} 220 ${607 + line * 4.4} 345 ${642 + line * 3.2}C485 ${682 + line * 2.5} 593 ${665 + line * 3} 754 ${701 + line * 2.1}`} />)}
+        {contourLines.map((line) => <path key={line} d={`M-20 ${608 + line * 5.2}C137 ${621 + line * 4.4} 244 ${676 + line * 3.1} 374 ${702 + line * 2.4}C503 ${728 + line * 1.8} 612 ${708 + line * 2.4} 768 ${730 + line * 1.4}`} />)}
       </g>
       <g clipPath="url(#right-wave-clip)" className="hero-backdrop__contours">
-        {contourLines.map((line) => <path key={line} d={`M684 ${762 + line * .3}C840 ${733 + line * 1.9} 946 ${659 + line * 3} 1050 ${612 + line * 3.7}C1195 ${546 + line * 4.8} 1307 ${516 + line * 5.7} 1460 ${503 + line * 6.4}`} />)}
+        {contourLines.map((line) => <path key={line} d={`M672 ${762 + line * .25}C845 ${745 + line * 1.25} 966 ${698 + line * 2.2} 1084 ${652 + line * 2.9}C1215 ${611 + line * 3.7} 1326 ${591 + line * 4.4} 1460 ${582 + line * 5}`} />)}
       </g>
       <g clipPath="url(#middle-wave-clip)" className="hero-backdrop__contours hero-backdrop__contours--soft">
-        {softContourLines.map((line) => <path key={line} d={`M-20 ${644 + line * 8}C178 ${652 + line * 6} 266 ${716 + line * 3.4} 429 ${713 + line * 3.1}C568 ${710 + line * 2.8} 626 ${677 + line * 4.1} 744 ${682 + line * 3.6}C874 ${687 + line * 3.2} 932 ${728 + line * 2.2} 1058 ${706 + line * 3}C1201 ${681 + line * 3.8} 1283 ${654 + line * 4.8} 1460 ${681 + line * 3.1}`} />)}
+        {softContourLines.map((line) => <path key={line} d={`M-20 ${690 + line * 5.5}C178 ${695 + line * 4.5} 281 ${737 + line * 2.5} 436 ${733 + line * 2.2}C576 ${729 + line * 2} 646 ${708 + line * 3} 754 ${712 + line * 2.7}C886 ${717 + line * 2.3} 953 ${744 + line * 1.7} 1071 ${731 + line * 2.1}C1212 ${715 + line * 2.8} 1306 ${697 + line * 3.4} 1460 ${713 + line * 2.2}`} />)}
       </g>
     </svg>
   );
