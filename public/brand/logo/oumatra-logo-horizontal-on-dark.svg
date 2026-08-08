@@ -1,13 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 220" role="img" aria-labelledby="title">
 
   <defs>
-    <linearGradient id="word-face" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FFFDF9"/><stop offset=".2" stop-color="#F3F0EB"/><stop offset=".72" stop-color="#F3F0EB"/><stop offset="1" stop-color="#BDB7AE"/></linearGradient>
+    <linearGradient id="word-face" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFDF9"/><stop offset=".22" stop-color="#F3F0EB"/><stop offset=".7" stop-color="#F3F0EB"/><stop offset="1" stop-color="#BDB7AE"/></linearGradient>
     <linearGradient id="word-highlight" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFDF9"/><stop offset="1" stop-color="#F3F0EB"/></linearGradient>
     <linearGradient id="word-shadow" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F3F0EB"/><stop offset="1" stop-color="#BDB7AE"/></linearGradient>
     <filter id="raised" x="-30%" y="-30%" width="170%" height="180%"><feDropShadow dx="2" dy="3" stdDeviation="2" flood-color="#000000" flood-opacity=".46"/></filter>
-    <filter id="word-depth" x="-8%" y="-20%" width="116%" height="150%"><feGaussianBlur in="SourceAlpha" stdDeviation="2" result="glowAlpha"/><feFlood flood-color="#F3F0EB" flood-opacity=".14"/><feComposite in2="glowAlpha" operator="in" result="glow"/><feDropShadow dx="1.6" dy="2.4" stdDeviation="1.1" flood-color="#061C22" flood-opacity=".38"/><feMerge><feMergeNode in="glow"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="word-depth" x="-10%" y="-25%" width="125%" height="165%"><feDropShadow dx="2" dy="3" stdDeviation="2" flood-color="#000000" flood-opacity=".46"/></filter>
     <filter id="dot-inset" x="-80%" y="-80%" width="260%" height="260%"><feDropShadow dx="0" dy="1.2" stdDeviation=".65" flood-color="#000000" flood-opacity=".55"/></filter>
     <radialGradient id="dot-face" cx="34%" cy="30%" r="72%" fx="30%" fy="26%"><stop stop-color="#FFFDF9"/><stop offset=".52" stop-color="#F3F0EB"/><stop offset="1" stop-color="#BDB7AE"/></radialGradient>
+    <radialGradient id="accent-dot-face" cx="34%" cy="30%" r="72%" fx="30%" fy="26%"><stop stop-color="#D98D73"/><stop offset=".58" stop-color="#D98D73"/><stop offset="1" stop-color="#8C4F3E"/></radialGradient>
     <symbol id="left-wave-bar" viewBox="0 0 8 100" preserveAspectRatio="none"><path d="M4 0C3.2 10 0 29 0 50s3.2 40 4 50Z" fill="#FFFDF9"/><path d="M4 0c.8 10 4 29 4 50s-3.2 40-4 50Z" fill="#BDB7AE"/></symbol>
     <symbol id="right-wave-bar" viewBox="0 0 8 100" preserveAspectRatio="none"><path d="M4 0C3.2 10 0 29 0 50s3.2 40 4 50Z" fill="#D98D73"/><path d="M4 0c.8 10 4 29 4 50s-3.2 40-4 50Z" fill="#8C4F3E"/></symbol>
   </defs>
@@ -22,9 +23,9 @@
     </g>
     <circle cx="120" cy="12" r="4.5" fill="url(#dot-face)" stroke="#F3F0EB" stroke-width=".8" filter="url(#dot-inset)"/><circle cx="120" cy="228" r="4.5" fill="url(#dot-face)" stroke="#F3F0EB" stroke-width=".8" filter="url(#dot-inset)"/>
   </g><g filter="url(#word-depth)">
-    <g transform="translate(270 43) scale(1 .85) translate(1.2 1.5)" fill="none" stroke="url(#word-shadow)" stroke-width="5.4" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="35" cy="70" rx="34" ry="40"/><path d="M105 30v52c0 20 10 30 28 30s28-10 28-30V30M220 110V30l32 62 32-62v80M340 110l30-80 30 80M452 30h68m-34 0v80M575 110V30h28c20 0 30 10 30 24s-10 24-30 24h-28m27 0 38 32M690 110l30-80 30 80"/></g>
-    <g transform="translate(270 43) scale(1 .85)" fill="none" stroke="url(#word-face)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="35" cy="70" rx="34" ry="40"/><path d="M105 30v52c0 20 10 30 28 30s28-10 28-30V30M220 110V30l32 62 32-62v80M340 110l30-80 30 80M452 30h68m-34 0v80M575 110V30h28c20 0 30 10 30 24s-10 24-30 24h-28m27 0 38 32M690 110l30-80 30 80"/></g>
-    <g transform="translate(270 43) scale(1 .85) translate(-.5 -.55)" fill="none" stroke="url(#word-highlight)" stroke-opacity=".8" stroke-width=".7" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="35" cy="70" rx="34" ry="40"/><path d="M105 30v52c0 20 10 30 28 30s28-10 28-30V30M220 110V30l32 62 32-62v80M340 110l30-80 30 80M452 30h68m-34 0v80M575 110V30h28c20 0 30 10 30 24s-10 24-30 24h-28m27 0 38 32M690 110l30-80 30 80"/></g>
-    <g fill="#D98D73"><circle cx="640" cy="120" r="5"/><circle cx="990" cy="120" r="5"/></g>
+    <g transform="translate(270 43) scale(1 .85) translate(1.35 1.55)" fill="none" stroke="url(#word-shadow)" stroke-width="6.2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="35" cy="70" rx="34" ry="40"/><path d="M105 30v52c0 20 10 30 28 30s28-10 28-30V30M220 110V30l32 62 32-62v80M340 110l30-80 30 80M452 30h68m-34 0v80M575 110V30h28c20 0 30 10 30 24s-10 24-30 24h-28m27 0 38 32M690 110l30-80 30 80"/></g>
+    <g transform="translate(270 43) scale(1 .85) translate(-.8 -.85)" fill="none" stroke="url(#word-highlight)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="35" cy="70" rx="34" ry="40"/><path d="M105 30v52c0 20 10 30 28 30s28-10 28-30V30M220 110V30l32 62 32-62v80M340 110l30-80 30 80M452 30h68m-34 0v80M575 110V30h28c20 0 30 10 30 24s-10 24-30 24h-28m27 0 38 32M690 110l30-80 30 80"/></g>
+    <g transform="translate(270 43) scale(1 .85)" fill="none" stroke="url(#word-face)" stroke-width="4.35" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="35" cy="70" rx="34" ry="40"/><path d="M105 30v52c0 20 10 30 28 30s28-10 28-30V30M220 110V30l32 62 32-62v80M340 110l30-80 30 80M452 30h68m-34 0v80M575 110V30h28c20 0 30 10 30 24s-10 24-30 24h-28m27 0 38 32M690 110l30-80 30 80"/></g>
+    <g fill="url(#accent-dot-face)" stroke="#8C4F3E" stroke-width=".75"><circle cx="640" cy="120" r="5"/><circle cx="990" cy="120" r="5"/></g>
   </g>
 </svg>

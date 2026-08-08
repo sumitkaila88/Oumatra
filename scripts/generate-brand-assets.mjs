@@ -13,13 +13,14 @@ const depthDefs = ({ left = teal, mono = false, compact = false } = {}) => {
   const rightDark = mono ? leftDark : "#8C4F3E";
   return `
   <defs>
-    <linearGradient id="word-face" x1="0" y1="0" x2="0" y2="1"><stop stop-color="${leftLight}"/><stop offset=".2" stop-color="${left}"/><stop offset=".72" stop-color="${left}"/><stop offset="1" stop-color="${leftDark}"/></linearGradient>
+    <linearGradient id="word-face" x1="0" y1="0" x2="1" y2="1"><stop stop-color="${leftLight}"/><stop offset=".22" stop-color="${left}"/><stop offset=".7" stop-color="${left}"/><stop offset="1" stop-color="${leftDark}"/></linearGradient>
     <linearGradient id="word-highlight" x1="0" y1="0" x2="1" y2="1"><stop stop-color="${leftLight}"/><stop offset="1" stop-color="${left}"/></linearGradient>
     <linearGradient id="word-shadow" x1="0" y1="0" x2="1" y2="1"><stop stop-color="${left}"/><stop offset="1" stop-color="${leftDark}"/></linearGradient>
     <filter id="raised" x="-30%" y="-30%" width="170%" height="180%"><feDropShadow dx="${compact ? ".6" : "2"}" dy="${compact ? ".8" : "3"}" stdDeviation="${compact ? ".45" : "2"}" flood-color="#000000" flood-opacity=".46"/></filter>
-    <filter id="word-depth" x="-8%" y="-20%" width="116%" height="150%"><feGaussianBlur in="SourceAlpha" stdDeviation="2" result="glowAlpha"/><feFlood flood-color="${left}" flood-opacity=".14"/><feComposite in2="glowAlpha" operator="in" result="glow"/><feDropShadow dx="1.6" dy="2.4" stdDeviation="1.1" flood-color="#061C22" flood-opacity=".38"/><feMerge><feMergeNode in="glow"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="word-depth" x="-10%" y="-25%" width="125%" height="165%"><feDropShadow dx="2" dy="3" stdDeviation="2" flood-color="#000000" flood-opacity=".46"/></filter>
     <filter id="dot-inset" x="-80%" y="-80%" width="260%" height="260%"><feDropShadow dx="0" dy="1.2" stdDeviation=".65" flood-color="#000000" flood-opacity=".55"/></filter>
     <radialGradient id="dot-face" cx="34%" cy="30%" r="72%" fx="30%" fy="26%"><stop stop-color="${leftLight}"/><stop offset=".52" stop-color="${left}"/><stop offset="1" stop-color="${leftDark}"/></radialGradient>
+    <radialGradient id="accent-dot-face" cx="34%" cy="30%" r="72%" fx="30%" fy="26%"><stop stop-color="${rightLight}"/><stop offset=".58" stop-color="${mono ? left : peach}"/><stop offset="1" stop-color="${rightDark}"/></radialGradient>
     <symbol id="left-wave-bar" viewBox="0 0 8 100" preserveAspectRatio="none"><path d="M4 0C3.2 10 0 29 0 50s3.2 40 4 50Z" fill="${leftLight}"/><path d="M4 0c.8 10 4 29 4 50s-3.2 40-4 50Z" fill="${leftDark}"/></symbol>
     <symbol id="right-wave-bar" viewBox="0 0 8 100" preserveAspectRatio="none"><path d="M4 0C3.2 10 0 29 0 50s3.2 40 4 50Z" fill="${rightLight}"/><path d="M4 0c.8 10 4 29 4 50s-3.2 40-4 50Z" fill="${rightDark}"/></symbol>
   </defs>`;
@@ -47,10 +48,10 @@ const wordGeometry = `<ellipse cx="35" cy="70" rx="34" ry="40"/><path d="M105 30
 
 function wordmark({ colour = teal, transform = "translate(270 43) scale(1 .85)", dotsY = 120, dotOffset = 0, mono = false } = {}) {
   return `<g filter="url(#word-depth)">
-    <g transform="${transform} translate(1.2 1.5)" fill="none" stroke="url(#word-shadow)" stroke-width="5.4" stroke-linecap="round" stroke-linejoin="round">${wordGeometry}</g>
-    <g transform="${transform}" fill="none" stroke="url(#word-face)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">${wordGeometry}</g>
-    <g transform="${transform} translate(-.5 -.55)" fill="none" stroke="url(#word-highlight)" stroke-opacity=".8" stroke-width=".7" stroke-linecap="round" stroke-linejoin="round">${wordGeometry}</g>
-    <g fill="${mono ? colour : peach}"><circle cx="${640 + dotOffset}" cy="${dotsY}" r="5"/><circle cx="${990 + dotOffset}" cy="${dotsY}" r="5"/></g>
+    <g transform="${transform} translate(1.35 1.55)" fill="none" stroke="url(#word-shadow)" stroke-width="6.2" stroke-linecap="round" stroke-linejoin="round">${wordGeometry}</g>
+    <g transform="${transform} translate(-.8 -.85)" fill="none" stroke="url(#word-highlight)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round">${wordGeometry}</g>
+    <g transform="${transform}" fill="none" stroke="url(#word-face)" stroke-width="4.35" stroke-linecap="round" stroke-linejoin="round">${wordGeometry}</g>
+    <g fill="url(#accent-dot-face)" stroke="${mono ? colour : "#8C4F3E"}" stroke-width=".75"><circle cx="${640 + dotOffset}" cy="${dotsY}" r="5"/><circle cx="${990 + dotOffset}" cy="${dotsY}" r="5"/></g>
   </g>`;
 }
 

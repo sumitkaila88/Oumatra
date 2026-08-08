@@ -1,13 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-labelledby="title">
 
   <defs>
-    <linearGradient id="word-face" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#438A94"/><stop offset=".2" stop-color="#1A4D54"/><stop offset=".72" stop-color="#1A4D54"/><stop offset="1" stop-color="#1A4D54"/></linearGradient>
+    <linearGradient id="word-face" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#438A94"/><stop offset=".22" stop-color="#1A4D54"/><stop offset=".7" stop-color="#1A4D54"/><stop offset="1" stop-color="#1A4D54"/></linearGradient>
     <linearGradient id="word-highlight" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#438A94"/><stop offset="1" stop-color="#1A4D54"/></linearGradient>
     <linearGradient id="word-shadow" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1A4D54"/><stop offset="1" stop-color="#1A4D54"/></linearGradient>
     <filter id="raised" x="-30%" y="-30%" width="170%" height="180%"><feDropShadow dx="2" dy="3" stdDeviation="2" flood-color="#000000" flood-opacity=".46"/></filter>
-    <filter id="word-depth" x="-8%" y="-20%" width="116%" height="150%"><feGaussianBlur in="SourceAlpha" stdDeviation="2" result="glowAlpha"/><feFlood flood-color="#1A4D54" flood-opacity=".14"/><feComposite in2="glowAlpha" operator="in" result="glow"/><feDropShadow dx="1.6" dy="2.4" stdDeviation="1.1" flood-color="#061C22" flood-opacity=".38"/><feMerge><feMergeNode in="glow"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="word-depth" x="-10%" y="-25%" width="125%" height="165%"><feDropShadow dx="2" dy="3" stdDeviation="2" flood-color="#000000" flood-opacity=".46"/></filter>
     <filter id="dot-inset" x="-80%" y="-80%" width="260%" height="260%"><feDropShadow dx="0" dy="1.2" stdDeviation=".65" flood-color="#000000" flood-opacity=".55"/></filter>
     <radialGradient id="dot-face" cx="34%" cy="30%" r="72%" fx="30%" fy="26%"><stop stop-color="#438A94"/><stop offset=".52" stop-color="#1A4D54"/><stop offset="1" stop-color="#1A4D54"/></radialGradient>
+    <radialGradient id="accent-dot-face" cx="34%" cy="30%" r="72%" fx="30%" fy="26%"><stop stop-color="#438A94"/><stop offset=".58" stop-color="#1A4D54"/><stop offset="1" stop-color="#1A4D54"/></radialGradient>
     <symbol id="left-wave-bar" viewBox="0 0 8 100" preserveAspectRatio="none"><path d="M4 0C3.2 10 0 29 0 50s3.2 40 4 50Z" fill="#438A94"/><path d="M4 0c.8 10 4 29 4 50s-3.2 40-4 50Z" fill="#1A4D54"/></symbol>
     <symbol id="right-wave-bar" viewBox="0 0 8 100" preserveAspectRatio="none"><path d="M4 0C3.2 10 0 29 0 50s3.2 40 4 50Z" fill="#438A94"/><path d="M4 0c.8 10 4 29 4 50s-3.2 40-4 50Z" fill="#1A4D54"/></symbol>
   </defs>

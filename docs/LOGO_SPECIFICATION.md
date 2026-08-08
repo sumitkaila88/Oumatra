@@ -23,7 +23,7 @@ The corrected silhouette follows the approved broad circular composition rather 
 
 ## Wordmark construction
 
-The OUMATRA wordmark is custom vector-path geometry, not editable text and not a generic substituted font. Its thin monoline construction, letter proportions, and generous spacing follow the approved reference. Both A letters are crossbar-free and contain the approved Warm Peach dot low in the counter. The master is rendered in three coordinated layers: a low-opacity glow/highlight foundation, the Deep Teal or monochrome vector face, and a fine upper-left edge highlight. A directional lower-right shadow is embedded in the SVG filter, creating the approved embossed appearance without changing the letter paths.
+The OUMATRA wordmark is custom vector-path geometry, not editable text and not a generic substituted font. Its thin monoline construction, letter proportions, and generous spacing follow the approved reference. Both A letters are crossbar-free and contain the approved copper dot low in the counter. The master is rendered in three coordinated vector layers: a 6.2-unit darker lower-right sidewall, a 5.5-unit lighter upper-left bevel, and a 4.35-unit primary face. The complete wordmark uses the same `2 × 3` directional cast shadow and 2-unit blur as the symbol. The A dots use inset radial shading and a darker bevel edge.
 
 The horizontal master uses a `1080 × 220` viewBox. Its symbol is rendered approximately 216 units wide by 197 units high including the dots. The wordmark begins at `x = 270`, leaving a 46-unit visual gap after the symbol. Wordmark cap construction is optically compressed to 68 units high with a 4.5-unit source stroke. The O is corrected to a true visible circle: 68 units wide by 68 units high.
 
