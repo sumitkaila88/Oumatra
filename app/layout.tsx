@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Manrope, Source_Serif_4 } from "next/font/google";
 import type { ReactNode } from "react";
 import "./globals.css";
+import "./refinements.css";
+import "./homepage-sections.css";
 
 const manrope = Manrope({
   subsets: ["latin"],
