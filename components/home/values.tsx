@@ -1,13 +1,12 @@
 const values=[
-  ["Origin with Purpose","We start with meaning. We question, listen, and create with intention to solve what truly matters.","target"],
-  ["Enduring Growth","We grow with resilience and responsibility. We build for the long term, creating value that lasts.","growth"],
-  ["Shared Strength","We believe in the power of partnership. Together, we build bridges that elevate people and strengthen communities.","bridge"],
-  ["Infinite Possibility","We imagine beyond boundaries. Curiosity and courage open doors to what’s next.","infinity"],
-  ["Legacy Minded","We think in generations. We build today for a better, more meaningful tomorrow.","legacy"],
+  ["Origin with Purpose","We start with meaning.",["We believe the strongest ideas begin with a reason to exist — a real need, a genuine possibility, or something worth making better.","We do not build simply because something can be built.","We begin with why it should exist."],"target"],
+  ["Enduring Growth","We choose progress that can last.",["Growth matters when it strengthens what already works rather than weakening the foundation beneath it.","We value patience, resilience and responsible ambition over growth for its own sake.","Build steadily. Grow meaningfully. Endure."],"growth"],
+  ["Shared Strength","The strongest things are rarely built alone.",["Companies are shaped by people, relationships, communities and trust.","We believe collaboration should multiply what each person brings rather than diminish individuality.","We build bridges that last."],"bridge"],
+  ["Infinite Possibility","The future should never be limited by the obvious.",["Curiosity gives ideas room to become something greater than their beginnings.","We explore beyond familiar boundaries while staying grounded in purpose.","Imagine further. Build deliberately."],"infinity"],
+  ["Legacy Minded","We think beyond the next milestone.",["The decisions worth making today are often the ones that will still make sense years from now.","We want to create companies, products and institutions that remain useful, trusted and meaningful long after their beginning.","We build today with tomorrow in mind."],"legacy"],
 ] as const;
-
 function ValueIcon({type}:{type:string}){return <span className={`value-icon value-icon--${type}`} aria-hidden="true"><i/></span>}
 export function Values(){return <section className="values" id="values" aria-labelledby="values-title"><div className="frame">
-  <div className="values__heading"><p>Our core values</p><h2 id="values-title">Guided by values. Driven by <em>impact.</em></h2><div className="mini-wave" aria-hidden="true"/></div>
-  <ol className="value-grid">{values.map(([title,copy,icon])=><li key={title}><ValueIcon type={icon}/><h3>{title}</h3><p>{copy}</p></li>)}</ol>
+  <div className="values__heading"><p>What guides us</p><h2 id="values-title">How we build matters as much as <em>what we build.</em></h2><p className="values__intro">These principles shape the choices we make, the companies we nurture, and the things we choose not to compromise.</p><div className="mini-wave" aria-hidden="true"/></div>
+  <ol className="value-grid">{values.map(([title,lead,paragraphs,icon],index)=><li key={title}><span className="value-number">0{index+1}</span><ValueIcon type={icon}/><h3>{title}</h3><strong>{lead}</strong>{paragraphs.map(copy=><p key={copy}>{copy}</p>)}</li>)}</ol>
 </div></section>}

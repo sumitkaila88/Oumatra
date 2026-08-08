@@ -1,0 +1,1 @@
+export function Manifesto(){return <section className="manifesto-content" aria-label="OUMATRA manifesto"><div className="frame"><p>One purpose.</p><p>Many companies.</p><p>Endless possibilities.</p><p>Built for generations.</p></div></section>}

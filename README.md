@@ -1,6 +1,6 @@
 # OUMATRA
 
-The brand-system and website foundation for OUMATRA — a global parent company created to build, nurture, and own enduring category-defining companies across technology and future industries.
+The brand-system and website foundation for OUMATRA — home to ideas and companies built with purpose, patience, and a long view.
 
 > **From Sound. Beyond Silence.**
 

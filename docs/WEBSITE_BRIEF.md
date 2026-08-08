@@ -2,7 +2,9 @@
 
 ## Purpose
 
-The future OUMATRA website should establish the company as the enduring parent of major companies. It should communicate meaning, long-term intent, and a coherent company ecosystem without reading like a SaaS landing page, agency portfolio, or speculative startup pitch.
+The OUMATRA website should communicate meaning, long-term intent, and the things it builds without repeatedly explaining its corporate structure. It must not read like a SaaS landing page, agency portfolio, or speculative startup pitch.
+
+All public homepage copy is governed by [HOMEPAGE_CONTENT.md](HOMEPAGE_CONTENT.md), **Status: APPROVED V1**.
 
 Step 3 implements the production homepage from the approved landing-page wireframe. Remaining corporate pages are deferred.
 
@@ -49,7 +51,7 @@ Do not invent company descriptions, industries, financial information, customer 
 
 ## Future inputs required
 
-- Approved company descriptions and destination URLs
+- Approved company destination URLs
 - Final information architecture and page requirements
 - Approved photography, illustration, or other art direction
 - Legal entity and contact details

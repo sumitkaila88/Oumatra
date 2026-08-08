@@ -22,13 +22,13 @@ export const metadata: Metadata = {
     template: "%s | OUMATRA",
   },
   description:
-    "OUMATRA is a global parent company creating and nurturing enduring companies from meaningful ideas.",
+    "OUMATRA is home to ideas and companies built with purpose, patience, and a long view.",
   applicationName: "OUMATRA",
-  keywords: ["OUMATRA", "parent company", "holding company"],
+  keywords: ["OUMATRA", "purpose", "companies"],
   openGraph: {
     title: "OUMATRA — From Sound. Beyond Silence.",
     description:
-      "OUMATRA is a global parent company creating and nurturing enduring companies from meaningful ideas.",
+      "OUMATRA is home to ideas and companies built with purpose, patience, and a long view.",
     images: [{ url: "/brand/social/oumatra-social-avatar.png", width: 512, height: 512, alt: "OUMATRA" }],
     type: "website",
     locale: "en_US",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     card: "summary",
     title: "OUMATRA — From Sound. Beyond Silence.",
     description:
-      "OUMATRA is a global parent company creating and nurturing enduring companies from meaningful ideas.",
+      "OUMATRA is home to ideas and companies built with purpose, patience, and a long view.",
     images: ["/brand/social/oumatra-social-avatar.png"],
   },
   icons: {
