@@ -13,7 +13,7 @@ The symbol may stand alone when OUMATRA is already identified by context, in com
 - **Photography:** Place the logo only over calm, even-toned areas with strong contrast. Use an approved solid field when the image is busy.
 - **Other palette colours:** Verify contrast at the actual output size. Do not recolour individual logo parts to force a match.
 
-No gradient logo treatment is approved in v1.
+No gradient logo treatment is approved in v1. Full-colour production assets include a restrained built-in symbol shadow that echoes the approved dimensional reference. Use the asset as supplied; do not add another shadow or glow. Monochrome variants remain flat.
 
 ## Colour roles
 
@@ -53,7 +53,7 @@ Do not:
 - Rearrange the outer forms, dots, or waveform.
 - Separate or animate individual waveform components.
 - Change individual colours arbitrarily.
-- Add shadows, glows, outlines, bevels, gradients, or 3D effects.
+- Add, remove, or modify the supplied dimensional shadow; add glows, outlines, bevels, gradients, or other 3D effects.
 - Place the logo on a low-contrast or visually busy background.
 - Substitute fonts or retype the approved wordmark.
 - Recreate the symbol with emoji, icons, religious marks, a generic O, infinity geometry, or technology imagery.

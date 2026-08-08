@@ -19,7 +19,7 @@ The corrected master symbol uses a square `240 × 240` viewBox with the artwork 
 - The dot diameter is `8` SVG units and defines the internal measurement unit `x`.
 - Light-surface artwork uses Deep Teal and Warm Peach. Dark-surface artwork changes teal elements to Ivory while retaining Warm Peach.
 
-The corrected silhouette follows the approved broad circular composition rather than a tall oval. No gradient, shadow, religious cue, infinity form, letter O construction, or technology motif has been introduced.
+The corrected silhouette follows the approved broad circular composition rather than a tall oval. Full-colour variants include the approved restrained dimensional treatment: a soft downward shadow (`dy=3`, `stdDeviation=2.4`, 28% opacity) applied only to the symbol group. No gradient, religious cue, infinity form, letter O construction, or technology motif has been introduced.
 
 ## Wordmark construction
 
@@ -35,6 +35,7 @@ The tagline uses a restrained serif treatment (`Georgia` with Times fallback) to
 
 - Horizontal lockup: 24-unit tagline below the wordmark in a `1080 × 280` field.
 - Stacked lockup: 28-unit tagline below the wordmark in an `860 × 540` field.
+- The horizontal tagline is centered at `x = 650`. Its two rules are equal at 120 units (`290–410` and `890–1010`) with matched optical gaps.
 - Divider rules use a 1.5-unit stroke and align around the tagline baseline area.
 
 Because the tagline remains SVG text, use a non-tagline lockup when exact cross-platform serif rendering cannot be guaranteed. The OUMATRA wordmark itself is always vector geometry.

@@ -14,6 +14,7 @@ This decision register separates approved foundations from unresolved work. An i
 - **Production SVG geometry:** The corrected v1 symbol uses mirrored organic outer forms in a square `240 × 240` construction field with an 85% optical vertical scale, a nine-bar central waveform, and aligned silence dots. Tall/oval emblem treatments must not be reused.
 - **Wordmark geometry:** OUMATRA is a custom thin monoline vector lockup with a mathematically circular visible O, a 68-unit cap height, generous spacing, and crossbar-free A forms containing Warm Peach dots. It is not typeset with a generic font.
 - **Tagline lockup:** The tagline uses an understated serif treatment, with “Beyond Silence.” in Warm Peach and thin horizontal rules flanking the centered line where space permits.
+- **Dimensional treatment:** Full-colour symbol artwork uses a restrained soft downward shadow derived from the approved board. Monochrome variants remain flat; no glow or gradient system is approved.
 - **Typography:** Source Serif 4 is the display/editorial family; Manrope is the body, interface, and supporting family. Both are served as self-hosted build assets through `next/font`.
 - **Clear space:** `x` equals the diameter of either silence dot. All logo variants require at least `4x` clear space; the symbol alone requires at least `3x`.
 - **Monochrome variants:** Deep Teal is the approved dark single-colour treatment; Ivory is the approved light single-colour treatment.

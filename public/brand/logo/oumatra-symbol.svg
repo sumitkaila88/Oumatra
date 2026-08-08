@@ -1,5 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-labelledby="title">
-  <title id="title">OUMATRA symbol</title><g transform="translate(0 18) scale(1 .85)">
+  <defs><filter id="symbol-depth" x="-25%" y="-25%" width="150%" height="160%"><feDropShadow dx="0" dy="3" stdDeviation="2.4" flood-color="#061C22" flood-opacity=".28"/></filter></defs>
+  <title id="title">OUMATRA symbol</title><g transform="translate(0 18) scale(1 .85)" filter="url(#symbol-depth)">
   <path fill="#0E3D4A" d="M104 24C58 34 30 70 30 120s28 86 74 96C76 190 58 157 58 120s18-70 46-96Z"/>
   <path fill="#D08A6A" d="M136 24c46 10 74 46 74 96s-28 86-74 96c28-26 46-59 46-96s-18-70-46-96Z"/>
   <g fill="#0E3D4A">
