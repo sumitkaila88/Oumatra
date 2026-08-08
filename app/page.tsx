@@ -28,7 +28,7 @@ export default function Home() {
             src="/brand/logo/oumatra-logo-stacked-tagline.svg"
             alt="OUMATRA — From Sound. Beyond Silence."
             width={860}
-            height={540}
+            height={480}
             priority
           />
           <p className="eyebrow">A global parent company</p>

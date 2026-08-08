@@ -11,8 +11,8 @@ This decision register separates approved foundations from unresolved work. An i
 - **Palette:** Deep Teal `#0E3D4A`, Indigo `#303A6B`, Plum `#7B2E5B`, Warm Peach `#D08A6A`, and Ivory `#F3F0EB`.
 - **Logo conceptual direction:** Opposing organic/crescent-like forms surrounding a central vertical sound-wave motif, with small upper/lower dots, representing sound and silence.
 - **Identity scope:** Industry-neutral parent-company identity. OUMATRA is not narrowly positioned as an AI company, software company, consultancy, startup studio, or agency.
-- **Production SVG geometry:** The corrected v1 symbol uses mirrored organic outer forms in a square `240 × 240` construction field, a nine-bar central waveform, and two vertically aligned silence dots. The rejected narrow `200 × 240` construction must not be reused.
-- **Wordmark geometry:** OUMATRA is a custom thin monoline vector lockup with generous spacing and crossbar-free A forms containing Warm Peach dots. It is not typeset with a generic font.
+- **Production SVG geometry:** The corrected v1 symbol uses mirrored organic outer forms in a square `240 × 240` construction field with an 85% optical vertical scale, a nine-bar central waveform, and aligned silence dots. Tall/oval emblem treatments must not be reused.
+- **Wordmark geometry:** OUMATRA is a custom thin monoline vector lockup with a mathematically circular visible O, a 68-unit cap height, generous spacing, and crossbar-free A forms containing Warm Peach dots. It is not typeset with a generic font.
 - **Tagline lockup:** The tagline uses an understated serif treatment, with “Beyond Silence.” in Warm Peach and thin horizontal rules flanking the centered line where space permits.
 - **Typography:** Source Serif 4 is the display/editorial family; Manrope is the body, interface, and supporting family. Both are served as self-hosted build assets through `next/font`.
 - **Clear space:** `x` equals the diameter of either silence dot. All logo variants require at least `4x` clear space; the symbol alone requires at least `3x`.

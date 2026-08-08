@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-labelledby="title">
-  <title id="title">OUMATRA symbol</title>
+  <title id="title">OUMATRA symbol</title><g transform="translate(0 18) scale(1 .85)">
   <path fill="#0E3D4A" d="M104 24C58 34 30 70 30 120s28 86 74 96C76 190 58 157 58 120s18-70 46-96Z"/>
   <path fill="#D08A6A" d="M136 24c46 10 74 46 74 96s-28 86-74 96c28-26 46-59 46-96s-18-70-46-96Z"/>
   <g fill="#0E3D4A">
@@ -8,5 +8,5 @@
   <g fill="#D08A6A">
     <rect x="124" y="58" width="4" height="124" rx="2"/><rect x="133" y="78" width="4" height="84" rx="2"/><rect x="142" y="96" width="4" height="48" rx="2"/><rect x="151" y="110" width="4" height="20" rx="2"/>
   </g>
-  <circle cx="120" cy="12" r="4" fill="#0E3D4A"/><circle cx="120" cy="228" r="4" fill="#0E3D4A"/>
+  <circle cx="120" cy="12" r="4" fill="#0E3D4A"/><circle cx="120" cy="228" r="4" fill="#0E3D4A"/></g>
 </svg>

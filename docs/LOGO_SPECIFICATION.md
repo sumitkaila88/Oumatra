@@ -8,10 +8,10 @@ The supplied approved brand board and cropped lockup references, together with `
 
 ## Symbol construction
 
-The corrected master symbol uses a square `240 × 240` viewBox. The earlier `200 × 240` construction was rejected because it made the emblem too oval.
+The corrected master symbol uses a square `240 × 240` viewBox with the artwork optically compressed to 85% on the vertical axis. The earlier full-height construction was rejected because it made the emblem feel too tall and oval.
 
 - The vertical axis runs through `x = 120`.
-- Crescent tips extend from `y = 24` to `y = 216`; their widest points sit at `x = 30` and `x = 210`. The resulting silhouette is balanced and near-circular.
+- Before optical correction, crescent tips run from `y = 24` to `y = 216` and the widest points sit at `x = 30` and `x = 210`. The master applies `scale(1, 0.85)` around the field, producing a visible crescent body approximately 180 units wide by 163 units high.
 - The outer forms share mirrored endpoints and curve proportions while remaining visually open rather than completing a literal O.
 - The waveform contains nine rounded bars: five Deep Teal and four Warm Peach.
 - The tallest teal bar runs from `y = 38` to `y = 202`; the adjacent peach bar runs from `y = 58` to `y = 182`.
@@ -19,13 +19,13 @@ The corrected master symbol uses a square `240 × 240` viewBox. The earlier `200
 - The dot diameter is `8` SVG units and defines the internal measurement unit `x`.
 - Light-surface artwork uses Deep Teal and Warm Peach. Dark-surface artwork changes teal elements to Ivory while retaining Warm Peach.
 
-The corrected silhouette follows the approved circular/vertical composition more closely. No gradient, shadow, religious cue, infinity form, letter O construction, or technology motif has been introduced.
+The corrected silhouette follows the approved broad circular composition rather than a tall oval. No gradient, shadow, religious cue, infinity form, letter O construction, or technology motif has been introduced.
 
 ## Wordmark construction
 
 The OUMATRA wordmark is custom vector-path geometry, not editable text and not a generic substituted font. Its thin monoline construction, letter proportions, and generous spacing follow the approved reference. Both A letters are crossbar-free and contain the approved Warm Peach dot low in the counter.
 
-The horizontal master uses a `1080 × 220` viewBox. The symbol occupies approximately `216 × 216` units. The wordmark begins at `x = 270`, leaving a 46-unit visual gap after the symbol. Wordmark cap construction is 80 units high with a 4.5-unit stroke.
+The horizontal master uses a `1080 × 220` viewBox. Its symbol is rendered approximately 216 units wide by 197 units high including the dots. The wordmark begins at `x = 270`, leaving a 46-unit visual gap after the symbol. Wordmark cap construction is optically compressed to 68 units high with a 4.5-unit source stroke. The O is corrected to a true visible circle: 68 units wide by 68 units high.
 
 Do not recreate the wordmark with website type, edit its spacing, replace its A treatment, or substitute individual letters.
 
