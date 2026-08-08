@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 910 260" role="img" aria-labelledby="title desc">
+  <title id="title">OUMATRA horizontal logo with tagline</title><desc id="desc">From Sound. Beyond Silence.</desc>
+  <g transform="translate(12 14) scale(.8)">
+    <path fill="#0E3D4A" d="M82 24C42 39 22 75 22 120s20 81 60 96C55 188 46 153 46 120s9-68 36-96Z"/><path fill="#D08A6A" d="M118 24c40 15 60 51 60 96s-20 81-60 96c27-28 36-63 36-96s-9-68-36-96Z"/>
+    <g fill="#0E3D4A"><rect x="70" y="111" width="4" height="18" rx="2"/><rect x="78" y="99" width="4" height="42" rx="2"/><rect x="86" y="82" width="4" height="76" rx="2"/><rect x="94" y="61" width="4" height="118" rx="2"/><rect x="102" y="49" width="4" height="142" rx="2"/></g>
+    <g fill="#D08A6A"><rect x="110" y="72" width="4" height="96" rx="2"/><rect x="118" y="90" width="4" height="60" rx="2"/><rect x="126" y="104" width="4" height="32" rx="2"/></g><circle cx="100" cy="10" r="4" fill="#0E3D4A"/><circle cx="100" cy="230" r="4" fill="#0E3D4A"/>
+  </g>
+  <g fill="none" stroke="#0E3D4A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="240" cy="100" rx="28" ry="39"/><path d="M301 62v50c0 17 9 27 25 27s25-10 25-27V62M410 139V62l28 52 28-52v77M523 139l27-77 27 77m-43-30h31M617 62h61m-30 0v77M722 139V62h27c18 0 27 9 27 23s-9 23-27 23h-27m25 0 32 31M815 139l27-77 27 77m-43-30h31"/>
+  </g>
+  <text x="210" y="190" fill="#0E3D4A" font-family="Arial,Helvetica,sans-serif" font-size="18" letter-spacing="2">From Sound. <tspan fill="#D08A6A">Beyond Silence.</tspan></text>
+</svg>

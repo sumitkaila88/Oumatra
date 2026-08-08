@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" style="color:#0E3D4A" role="img" aria-labelledby="title">
+  <title id="title">OUMATRA single-colour dark symbol</title>
+  <g fill="currentColor">
+    <path d="M82 24C42 39 22 75 22 120s20 81 60 96C55 188 46 153 46 120s9-68 36-96Z"/><path d="M118 24c40 15 60 51 60 96s-20 81-60 96c27-28 36-63 36-96s-9-68-36-96Z"/>
+    <rect x="70" y="111" width="4" height="18" rx="2"/><rect x="78" y="99" width="4" height="42" rx="2"/><rect x="86" y="82" width="4" height="76" rx="2"/><rect x="94" y="61" width="4" height="118" rx="2"/><rect x="102" y="49" width="4" height="142" rx="2"/><rect x="110" y="72" width="4" height="96" rx="2"/><rect x="118" y="90" width="4" height="60" rx="2"/><rect x="126" y="104" width="4" height="32" rx="2"/>
+    <circle cx="100" cy="10" r="4"/><circle cx="100" cy="230" r="4"/>
+  </g>
+</svg>

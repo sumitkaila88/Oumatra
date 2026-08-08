@@ -1,4 +1,5 @@
-import { BrandMarkReserve } from "@/components/brand-mark-reserve";
+import Image from "next/image";
+import { BrandShowcase } from "@/components/brand-showcase";
 import { Ecosystem } from "@/components/ecosystem";
 import { Palette } from "@/components/palette";
 import { Values } from "@/components/values";
@@ -8,19 +9,30 @@ export default function Home() {
     <main>
       <section className="hero" aria-labelledby="hero-title">
         <nav className="shell nav" aria-label="Primary navigation">
-          <a className="nav-wordmark" href="#top" aria-label="OUMATRA home">
-            OUMATRA
+          <a className="nav-logo" href="#top" aria-label="OUMATRA home">
+            <Image
+              src="/brand/logo/oumatra-logo-horizontal.svg"
+              alt=""
+              aria-hidden="true"
+              width={910}
+              height={220}
+              priority
+            />
           </a>
           <span className="eyebrow">Brand foundation · v1</span>
         </nav>
 
         <div className="shell hero-content" id="top">
-          <BrandMarkReserve />
+          <Image
+            className="hero-logo"
+            src="/brand/logo/oumatra-logo-stacked-tagline.svg"
+            alt="OUMATRA — From Sound. Beyond Silence."
+            width={720}
+            height={520}
+            priority
+          />
           <p className="eyebrow">A global parent company</p>
-          <h1 id="hero-title">OUMATRA</h1>
-          <p className="tagline">
-            From Sound. <span>Beyond Silence.</span>
-          </p>
+          <h1 className="visually-hidden" id="hero-title">OUMATRA</h1>
           <p className="hero-description">
             Created to build, nurture, and own enduring category-defining companies
             across technology and future industries.
@@ -48,15 +60,22 @@ export default function Home() {
         </div>
       </section>
 
+      <BrandShowcase />
       <Palette />
       <Values />
       <Ecosystem />
 
       <footer className="footer">
         <div className="shell footer-inner">
-          <p className="nav-wordmark">OUMATRA</p>
+          <Image
+            className="footer-logo"
+            src="/brand/logo/oumatra-logo-monochrome-light.svg"
+            alt="OUMATRA"
+            width={910}
+            height={220}
+          />
           <p>From Sound. Beyond Silence.</p>
-          <p className="footer-note">Brand foundation preview · Step 1</p>
+          <p className="footer-note">Production brand system · Step 2</p>
         </div>
       </footer>
     </main>

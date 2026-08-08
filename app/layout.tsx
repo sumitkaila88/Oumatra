@@ -1,6 +1,19 @@
 import type { Metadata } from "next";
+import { Manrope, Source_Serif_4 } from "next/font/google";
 import type { ReactNode } from "react";
 import "./globals.css";
+
+const manrope = Manrope({
+  subsets: ["latin"],
+  variable: "--font-manrope",
+  display: "swap",
+});
+
+const sourceSerif = Source_Serif_4({
+  subsets: ["latin"],
+  variable: "--font-source-serif",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://oumatra.com"),
@@ -26,12 +39,20 @@ export const metadata: Metadata = {
     description:
       "Building enduring category-defining companies across technology and future industries.",
   },
+  icons: {
+    icon: [
+      { url: "/brand/favicon/favicon.svg", type: "image/svg+xml" },
+      { url: "/brand/favicon/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/brand/favicon/favicon.ico", sizes: "any" },
+    ],
+    apple: "/brand/favicon/apple-touch-icon.png",
+  },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={`${manrope.variable} ${sourceSerif.variable}`}>{children}</body>
     </html>
   );
 }
