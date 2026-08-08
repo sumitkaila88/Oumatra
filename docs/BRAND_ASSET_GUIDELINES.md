@@ -13,7 +13,7 @@ The symbol may stand alone when OUMATRA is already identified by context, in com
 - **Photography:** Place the logo only over calm, even-toned areas with strong contrast. Use an approved solid field when the image is busy.
 - **Other palette colours:** Verify contrast at the actual output size. Do not recolour individual logo parts to force a match.
 
-The production SVGs use a three-band crescent construction: each side contains three nested curved colour bands separated by two genuinely transparent curved cuts. The middle band has a sharp central ridge with a lighter plane on its left and a darker plane on its right, creating the chiseled metallic depth. A restrained cast shadow and soft wordmark depth remain embedded in the asset. Use the assets as supplied; do not add another shadow, glow, bevel or CSS filter.
+The production SVGs use a two-face chiseled construction. Every crescent is manually divided down its central curved axis into adjacent highlight and shadow paths that meet at one sharp ridge without a gap. Waveform bars use the same contiguous split-face construction and grow progressively toward a significantly taller, thicker central anchor. The silence dots remain single shapes with an inset radial treatment. Use the assets as supplied; do not add another shadow, glow, bevel or CSS filter.
 
 ## Colour roles
 

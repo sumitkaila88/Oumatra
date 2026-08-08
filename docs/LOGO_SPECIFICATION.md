@@ -13,13 +13,13 @@ The corrected master symbol uses a square `240 × 240` viewBox with the artwork 
 - The vertical axis runs through `x = 120`.
 - Before optical correction, crescent tips run from `y = 24` to `y = 216` and the widest points sit at `x = 30` and `x = 210`. The master applies `scale(1, 0.85)` around the field, producing a visible crescent body approximately 180 units wide by 163 units high.
 - The outer forms share mirrored endpoints and curve proportions while remaining visually open rather than completing a literal O.
-- The waveform contains nine rounded bars: five Deep Teal and four Warm Peach. Their widths are deliberately modulated at `3, 4, 5, 6, 5, 6, 5, 4, 3` units, so the centre carries more acoustic weight than the outer bars.
-- The tallest teal bar runs from `y = 38` to `y = 202`; the adjacent peach bar runs from `y = 58` to `y = 182`.
-- Silence dots are centered at `(120, 12)` and `(120, 228)` with radius `4`.
-- The dot diameter is `8` SVG units and defines the internal measurement unit `x`.
+- The waveform contains nine chiseled bars: five teal and four copper. Heights progress symmetrically as `20, 40, 70, 110, 184, 110, 70, 40, 20` units and widths as `3, 4, 5, 6, 8, 6, 5, 4, 3` units.
+- The central teal bar is centered exactly on `x = 120`, runs from `y = 28` to `y = 212`, and is deliberately taller and thicker than every surrounding bar.
+- Silence dots are centered at `(120, 12)` and `(120, 228)` with radius `4.5`. Each is a single vector shape with a darker inset radial face and inner-bevel stroke.
+- The dot diameter is `9` SVG units and defines the internal measurement unit `x`.
 - Light-surface artwork uses Deep Teal and Warm Peach. Dark-surface artwork changes teal elements to Ivory while retaining Warm Peach.
 
-The corrected silhouette follows the approved broad circular composition rather than a tall oval. Every production variant derives from the same dimensional master. Each crescent is divided into three nested curved bands by two transparent 2.6-unit cut lines. The retained middle curve is constructed as a sharp ridge: a 3.8-unit lighter plane and opposing 3.8-unit darker plane meet at a fine 0.9-unit crest. This contrast creates physical elevation without changing the approved outer geometry or introducing a religious cue, infinity form, letter O construction, or technology motif.
+The corrected silhouette follows the approved broad circular composition rather than a tall oval. Every production variant derives from the same dimensional master. Each crescent is divided into two adjacent closed paths along its exact central curve. A lighter face and substantially darker face share the same ridge coordinates, so there is no overlap, seam or transparent gap. The colour contrast creates physical elevation without changing the approved outer geometry or introducing a religious cue, infinity form, letter O construction, or technology motif.
 
 ## Wordmark construction
 
