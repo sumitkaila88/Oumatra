@@ -13,7 +13,7 @@ The symbol may stand alone when OUMATRA is already identified by context, in com
 - **Photography:** Place the logo only over calm, even-toned areas with strong contrast. Use an approved solid field when the image is busy.
 - **Other palette colours:** Verify contrast at the actual output size. Do not recolour individual logo parts to force a match.
 
-No gradient logo treatment is approved in v1. Full-colour production assets include a restrained built-in symbol shadow that echoes the approved dimensional reference. Use the asset as supplied; do not add another shadow or glow. Monochrome variants remain flat.
+The production SVGs include a built-in dimensional rendering that follows the approved reference: restrained face shading, fine edge highlights, directional cast shadows and a soft wordmark halo. These are lighting effects derived from the locked colours, not additional brand colours or a decorative gradient treatment. Use the assets as supplied; do not add another shadow, glow, bevel or CSS filter. Monochrome variants retain one base colour while using opacity-based light and shadow to preserve the same raised construction.
 
 ## Colour roles
 
@@ -39,7 +39,7 @@ Do not typeset a replacement OUMATRA wordmark using either family. The approved 
 
 ## Favicon
 
-The favicon uses the approved outer forms and silence dots with a simplified five-bar waveform. The reduction from the nine-bar master protects the central sound gesture at 16 px. Use `favicon.svg` where supported, with the supplied ICO and PNG fallbacks. Do not derive another micro-mark.
+The favicon uses the approved outer forms, silence dots and nine-bar master waveform. Stroke widths and lighting are reduced automatically for the compact rendering. Use `favicon.svg` where supported, with the supplied ICO and PNG fallbacks. Do not derive another micro-mark.
 
 ## Social avatar
 
@@ -53,7 +53,7 @@ Do not:
 - Rearrange the outer forms, dots, or waveform.
 - Separate or animate individual waveform components.
 - Change individual colours arbitrarily.
-- Add, remove, or modify the supplied dimensional shadow; add glows, outlines, bevels, gradients, or other 3D effects.
+- Add, remove, or modify the supplied dimensional shading, glow, highlight, bevel or shadow.
 - Place the logo on a low-contrast or visually busy background.
 - Substitute fonts or retype the approved wordmark.
 - Recreate the symbol with emoji, icons, religious marks, a generic O, infinity geometry, or technology imagery.
