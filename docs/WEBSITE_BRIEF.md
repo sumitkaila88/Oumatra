@@ -4,7 +4,7 @@
 
 The future OUMATRA website should establish the company as the enduring parent of major companies. It should communicate meaning, long-term intent, and a coherent company ecosystem without reading like a SaaS landing page, agency portfolio, or speculative startup pitch.
 
-Step 1 does not implement that full website. It provides the technical base, brand tokens, core documentation, and a compact brand-preview homepage for review.
+Step 3 implements the production homepage from the approved landing-page wireframe. Remaining corporate pages are deferred.
 
 ## Primary audience
 
@@ -33,18 +33,15 @@ This list is directional, not an approved sitemap or content model.
 
 Avoid generic futuristic AI visuals, neon glow, excessive gradients, pervasive glassmorphism, crypto motifs, stock corporate imagery, inflated metrics, and unsupported claims.
 
-## Step 1 homepage scope
+## Step 3 homepage scope
 
-The preview includes only:
+The production homepage includes:
 
-- A typographic OUMATRA treatment and an explicit reserve for the future approved mark
-- The locked tagline
-- A short parent-company description
-- The five-colour palette
-- The five core values
-- A simple OUMATRA → KLANS / MEMRY / Future Companies architecture
+- Approved OUMATRA production assets and tagline
+- Hero, purpose, companies, values, and structured footer bands matching the approved wireframe
+- Supplied KLANS and MEMRY marks with approved homepage descriptions
 
-It intentionally contains no full navigation architecture, company descriptions, CMS, database, authentication, analytics, backend, animation framework, UI framework, cookie handling, contact form, or production asset approximation.
+It intentionally contains no remaining corporate pages, CMS, database, authentication, analytics, backend, animation framework, UI framework, cookie handling, or functional contact/newsletter form.
 
 ## Content guardrails
 

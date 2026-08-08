@@ -4,7 +4,7 @@ The brand-system and website foundation for OUMATRA — a global parent company 
 
 > **From Sound. Beyond Silence.**
 
-This repository currently contains the Step 1 technical foundation and the Step 2 production brand asset system. The homepage is an internal brand verification preview, not the full corporate website.
+This repository contains the Step 1 technical foundation, Step 2 production brand asset system, and the wireframe-led Step 3 production homepage. Remaining corporate pages are deferred.
 
 ## Technology
 
