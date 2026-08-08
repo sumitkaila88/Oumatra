@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <defs><filter id="symbol-depth" x="-25%" y="-25%" width="150%" height="160%"><feDropShadow dx="0" dy="1" stdDeviation="1" flood-color="#061C22" flood-opacity=".32"/></filter></defs>
+  <title id="title">OUMATRA</title><rect width="64" height="64" rx="14" fill="#0E3D4A"/><g transform="translate(0 5) scale(1 .84)" filter="url(#symbol-depth)">
+  <path fill="#F3F0EB" d="M28 10C17 13 10 21 10 32s7 19 18 22c-7-6-11-14-11-22s4-16 11-22Z"/><path fill="#D08A6A" d="M36 10c11 3 18 11 18 22s-7 19-18 22c7-6 11-14 11-22s-4-16-11-22Z"/>
+  <g fill="#F3F0EB"><rect x="24" y="28" width="2" height="8" rx="1"/><rect x="28" y="23" width="2" height="18" rx="1"/><rect x="32" y="16" width="2" height="32" rx="1"/></g><g fill="#D08A6A"><rect x="36" y="21" width="2" height="22" rx="1"/><rect x="40" y="27" width="2" height="10" rx="1"/></g>
+  <circle cx="32" cy="6" r="1.5" fill="#F3F0EB"/><circle cx="32" cy="58" r="1.5" fill="#F3F0EB"/></g>
+</svg>

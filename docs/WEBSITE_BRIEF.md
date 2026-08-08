@@ -52,10 +52,10 @@ Do not invent company descriptions, industries, financial information, customer 
 
 ## Future inputs required
 
-- Approved production logo package and usage rules
-- Final typeface decision and licensing confirmation
 - Approved company descriptions and destination URLs
 - Final information architecture and page requirements
 - Approved photography, illustration, or other art direction
 - Legal entity and contact details
 - Privacy, terms, and compliance requirements as applicable
+
+The v1 production logo package, typography, and core usage rules were resolved in Step 2. Future website design must apply those locked decisions without treating the current verification-page layout as the final site design.

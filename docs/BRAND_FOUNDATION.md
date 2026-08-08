@@ -115,10 +115,23 @@ This is a conceptual parent-to-company relationship only. Descriptions, industri
 | Warm Peach | `#D08A6A` | Human, warm accent and detail colour |
 | Ivory | `#F3F0EB` | Primary light surface and text on dark brand surfaces |
 
-These exact values are locked and implemented as reusable CSS and Tailwind tokens in `app/globals.css`. Components must reference tokens rather than repeat hex codes. Both light and dark brand surfaces should preserve readable contrast; palette colours are not automatically valid for every text/background pairing.
+These exact values are locked and implemented as reusable CSS and Tailwind tokens in `app/globals.css`. Functional aliases cover primary and dark backgrounds, primary and muted text, borders, accents, and focus states. Components must reference tokens rather than repeat hex codes. Both light and dark brand surfaces must preserve readable contrast; palette colours are not automatically valid for every text/background pairing.
 
 ## Logo concept
 
 The approved conceptual direction is a mark composed of opposing organic, crescent-like forms surrounding a central vertical sound-wave motif, with small upper and lower dots. It represents sound and silence.
 
-The supplied brand-kit image is conceptual artwork, not a production SVG. It must not be traced and presented as the final master. Do not replace it with an infinity symbol, generic technology icon, letter O icon, religious symbol, crescent/star, architecture/building mark, or any generated symbol. Production asset locations are reserved under `public/brand/` and will remain empty until approved masters are supplied.
+The supplied brand-kit image is conceptual artwork rather than a master vector. The corrected v1 production symbol closely reconstructs its approved direction with clean SVG geometry: two opposing organic outer forms, a nine-bar central waveform, and small upper and lower dots in a balanced square field. It does not auto-trace the raster image. Do not replace it with an infinity symbol, generic technology icon, letter O icon, religious symbol, crescent/star, architecture/building mark, or generated symbol.
+
+Production assets live under `public/brand/`. Detailed construction, usage, minimum-size, and background rules are defined in [LOGO_SPECIFICATION.md](LOGO_SPECIFICATION.md) and [BRAND_ASSET_GUIDELINES.md](BRAND_ASSET_GUIDELINES.md).
+
+## Typography
+
+The approved v1 type system pairs:
+
+- **Source Serif 4** for display headings and editorial moments. Use regular weight by default; use semibold only when hierarchy requires it.
+- **Manrope** for body copy, labels, navigation, metadata, and interfaces. Use regular, medium, semibold, and bold weights with restraint.
+
+Both families are open-source and loaded through `next/font`, which self-hosts the generated web files. Fallbacks are Georgia/Times New Roman for display and Arial/Helvetica for body text.
+
+Heading tracking should be slightly tightened at large sizes (`-0.02em` to `-0.045em`) and returned toward normal at small sizes. Body copy uses normal tracking. Uppercase labels may use `0.12em` to `0.20em`; the OUMATRA logo is an asset and must not be simulated with live type.
