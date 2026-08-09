@@ -124,7 +124,6 @@ We build today with tomorrow in mind.
 
 One purpose.  
 Many companies.  
-Endless possibilities.  
 Built for generations.
 
 ## Closing

@@ -1,9 +1,13 @@
 import type { Metadata } from "next";
 import { Manrope, Source_Serif_4 } from "next/font/google";
 import type { ReactNode } from "react";
+import { Footer } from "@/components/home/footer";
+import { Header } from "@/components/home/header";
+import { siteConfig } from "@/lib/site";
 import "./globals.css";
 import "./refinements.css";
 import "./homepage-sections.css";
+import "./inner-pages.css";
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -18,7 +22,7 @@ const sourceSerif = Source_Serif_4({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://oumatra.com"),
+  metadataBase: new URL(siteConfig.url),
   title: {
     default: "OUMATRA — From Sound. Beyond Silence.",
     template: "%s | OUMATRA",
@@ -26,6 +30,7 @@ export const metadata: Metadata = {
   description:
     "OUMATRA is home to ideas and companies built with purpose, patience, and a long view.",
   applicationName: "OUMATRA",
+  alternates: { canonical: "/" },
   keywords: ["OUMATRA", "purpose", "companies"],
   openGraph: {
     title: "OUMATRA — From Sound. Beyond Silence.",
@@ -56,7 +61,12 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
   return (
     <html lang="en">
-      <body className={`${manrope.variable} ${sourceSerif.variable}`}>{children}</body>
+      <body className={`${manrope.variable} ${sourceSerif.variable}`}>
+        <a className="skip-link" href="#main-content">Skip to main content</a>
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 520" fill="none">
+  <defs>
+    <linearGradient id="tone" x1="0" y1="260" x2="360" y2="260" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0E3D4A"/>
+      <stop offset=".42" stop-color="#176271" stop-opacity=".9"/>
+      <stop offset=".78" stop-color="#438A94" stop-opacity=".46"/>
+      <stop offset="1" stop-color="#438A94" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="face" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#0A303A"/>
+      <stop offset=".52" stop-color="#438A94"/>
+      <stop offset="1" stop-color="#0E3D4A"/>
+    </linearGradient>
+    <filter id="depth" x="-30%" y="-8%" width="170%" height="116%">
+      <feDropShadow dx="1" dy="1.2" stdDeviation="1.2" flood-color="#0E3D4A" flood-opacity=".28"/>
+    </filter>
+  </defs>
+  <g fill="url(#tone)" filter="url(#depth)">
+    <path d="M5 10 10 260 5 510 0 260Z"/><path d="M24 22 29 260 24 498 19 260Z"/><path d="M44 38 49 260 44 482 39 260Z"/><path d="M65 56 70 260 65 464 60 260Z"/><path d="M87 76 92 260 87 444 82 260Z"/><path d="M110 99 115 260 110 421 105 260Z"/><path d="M134 123 139 260 134 397 129 260Z"/><path d="M159 148 164 260 159 372 154 260Z"/><path d="M185 172 190 260 185 348 180 260Z"/><path d="M212 194 217 260 212 326 207 260Z"/><path d="M240 213 245 260 240 307 235 260Z"/><path d="M269 229 274 260 269 291 264 260Z"/><path d="M299 241 304 260 299 279 294 260Z"/><path d="M330 249 335 260 330 271 325 260Z"/><path d="M355 254 359 260 355 266 351 260Z"/>
+  </g>
+  <g fill="url(#face)" opacity=".42">
+    <path d="M7 20 8.5 260 7 500 5.5 260Z"/><path d="M46 48 47.5 260 46 472 44.5 260Z"/><path d="M89 87 90.5 260 89 433 87.5 260Z"/><path d="M136 134 137.5 260 136 386 134.5 260Z"/><path d="M187 183 188.5 260 187 337 185.5 260Z"/><path d="M242 222 243.5 260 242 298 240.5 260Z"/>
+  </g>
+</svg>

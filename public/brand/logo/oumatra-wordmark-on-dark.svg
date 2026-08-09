@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="255 30 790 140" role="img" aria-labelledby="title">
+  <title id="title">OUMATRA wordmark for dark backgrounds</title>
+  <defs>
+    <linearGradient id="word-face" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFDF9"/><stop offset=".22" stop-color="#F3F0EB"/><stop offset=".7" stop-color="#F3F0EB"/><stop offset="1" stop-color="#BDB7AE"/></linearGradient>
+    <linearGradient id="word-highlight" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFDF9"/><stop offset="1" stop-color="#F3F0EB"/></linearGradient>
+    <linearGradient id="word-shadow" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F3F0EB"/><stop offset="1" stop-color="#BDB7AE"/></linearGradient>
+    <radialGradient id="accent-dot-face" cx="34%" cy="30%" r="72%" fx="30%" fy="26%"><stop stop-color="#D98D73"/><stop offset=".58" stop-color="#D98D73"/><stop offset="1" stop-color="#8C4F3E"/></radialGradient>
+    <filter id="word-depth" x="-10%" y="-25%" width="125%" height="165%"><feDropShadow dx="2" dy="3" stdDeviation="2" flood-color="#000000" flood-opacity=".46"/></filter>
+  </defs>
+  <g filter="url(#word-depth)">
+    <g transform="translate(270 43) scale(1 .85) translate(1.35 1.55)" fill="none" stroke="url(#word-shadow)" stroke-width="6.2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="35" cy="70" rx="34" ry="40"/><path d="M105 30v52c0 20 10 30 28 30s28-10 28-30V30M220 110V30l32 62 32-62v80M340 110l30-80 30 80M452 30h68m-34 0v80M575 110V30h28c20 0 30 10 30 24s-10 24-30 24h-28m27 0 38 32M690 110l30-80 30 80"/></g>
+    <g transform="translate(270 43) scale(1 .85) translate(-.8 -.85)" fill="none" stroke="url(#word-highlight)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="35" cy="70" rx="34" ry="40"/><path d="M105 30v52c0 20 10 30 28 30s28-10 28-30V30M220 110V30l32 62 32-62v80M340 110l30-80 30 80M452 30h68m-34 0v80M575 110V30h28c20 0 30 10 30 24s-10 24-30 24h-28m27 0 38 32M690 110l30-80 30 80"/></g>
+    <g transform="translate(270 43) scale(1 .85)" fill="none" stroke="url(#word-face)" stroke-width="4.35" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="35" cy="70" rx="34" ry="40"/><path d="M105 30v52c0 20 10 30 28 30s28-10 28-30V30M220 110V30l32 62 32-62v80M340 110l30-80 30 80M452 30h68m-34 0v80M575 110V30h28c20 0 30 10 30 24s-10 24-30 24h-28m27 0 38 32M690 110l30-80 30 80"/></g>
+    <g fill="url(#accent-dot-face)" stroke="#8C4F3E" stroke-width=".75"><circle cx="640" cy="120" r="5"/><circle cx="990" cy="120" r="5"/></g>
+  </g>
+</svg>

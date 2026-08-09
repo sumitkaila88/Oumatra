@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { PurposeObject } from "@/components/brand/purpose-object";
 
 export function Purpose() {
   return (
@@ -18,10 +18,7 @@ export function Purpose() {
           </p>
         </div>
 
-        <div className="purpose-object" aria-hidden="true">
-          <span className="purpose-object__ring purpose-object__ring--outer" />
-          <Image src="/brand/logo/oumatra-symbol-light.svg" alt="" width={340} height={340} />
-        </div>
+        <PurposeObject />
       </div>
     </section>
   );

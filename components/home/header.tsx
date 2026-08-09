@@ -1,20 +1,15 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
-
-const items = [
-  ["Our Origin", "#origin", "origin"],
-  ["Our Purpose", "#purpose", "purpose"],
-  ["Companies", "#companies", "companies"],
-  ["Values", "#values", "values"],
-  ["Contact", "#contact", "contact"],
-] as const;
+import { primaryNavigation } from "@/lib/site";
 
 export function Header() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [active, setActive] = useState("");
+  const pathname = usePathname();
   const menuButton = useRef<HTMLButtonElement>(null);
   const firstLink = useRef<HTMLAnchorElement>(null);
   const restoreFocus = useRef(false);
@@ -24,19 +19,6 @@ export function Header() {
     updateHeader();
     window.addEventListener("scroll", updateHeader, { passive: true });
     return () => window.removeEventListener("scroll", updateHeader);
-  }, []);
-
-  useEffect(() => {
-    const sections = items.map(([, , id]) => document.getElementById(id)).filter(Boolean) as HTMLElement[];
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const visible = entries.filter((entry) => entry.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-        if (visible) setActive(visible.target.id);
-      },
-      { rootMargin: "-22% 0px -62%", threshold: [0, .1, .25, .5] },
-    );
-    sections.forEach((section) => observer.observe(section));
-    return () => observer.disconnect();
   }, []);
 
   useEffect(() => {
@@ -52,18 +34,38 @@ export function Header() {
     document.body.style.overflow = "hidden";
     main?.setAttribute("inert", "");
     footer?.setAttribute("inert", "");
-    requestAnimationFrame(() => firstLink.current?.focus());
+    const focusFrame = requestAnimationFrame(() => firstLink.current?.focus());
 
     const onKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
         restoreFocus.current = true;
         setOpen(false);
+        return;
+      }
+
+      if (event.key === "Tab") {
+        const header = menuButton.current?.closest("header");
+        const focusable = header?.querySelectorAll<HTMLElement>(
+          'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])',
+        );
+        if (!focusable?.length) return;
+
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+        if (event.shiftKey && document.activeElement === first) {
+          event.preventDefault();
+          last.focus();
+        } else if (!event.shiftKey && document.activeElement === last) {
+          event.preventDefault();
+          first.focus();
+        }
       }
     };
     document.addEventListener("keydown", onKeyDown);
 
     return () => {
       document.body.style.overflow = previousOverflow;
+      cancelAnimationFrame(focusFrame);
       main?.removeAttribute("inert");
       footer?.removeAttribute("inert");
       document.removeEventListener("keydown", onKeyDown);
@@ -75,9 +77,9 @@ export function Header() {
   return (
     <header className={classes}>
       <div className="header__inner frame">
-        <a href="#top" className="header__logo" aria-label="OUMATRA home" onClick={() => setOpen(false)}>
+        <Link href="/" className="header__logo" aria-label="OUMATRA home" onClick={() => setOpen(false)}>
           <Image src="/brand/logo/oumatra-logo-horizontal.svg" alt="" width={1080} height={220} priority />
-        </a>
+        </Link>
         <button
           ref={menuButton}
           className="menu"
@@ -93,16 +95,16 @@ export function Header() {
           <i /><i />
         </button>
         <nav id="primary-navigation" className={open ? "nav nav--open" : "nav"} aria-label="Primary navigation">
-          {items.map(([label, href, id], index) => (
-            <a
+          {primaryNavigation.map(([label, href], index) => (
+            <Link
               ref={index === 0 ? firstLink : undefined}
-              key={id}
+              key={href}
               href={href}
-              aria-current={active === id ? "location" : undefined}
+              aria-current={pathname === href ? "page" : undefined}
               onClick={() => setOpen(false)}
             >
               {label}
-            </a>
+            </Link>
           ))}
         </nav>
       </div>

@@ -1,4 +1,6 @@
-const values = [
+import { SectionDivider } from "@/components/brand/section-divider";
+
+export const values = [
   {
     title: "Origin with Purpose",
     lead: "We start with meaning.",
@@ -30,7 +32,7 @@ const values = [
     icon: "strength",
   },
   {
-    title: "Infinite Possibility",
+    title: "Infinite Possibilities",
     lead: "The future should never be limited by the obvious.",
     paragraphs: [
       "Curiosity gives ideas room to become something greater than their beginnings.",
@@ -51,15 +53,17 @@ const values = [
   },
 ] as const;
 
-function ValueMark({ type }: { type: string }) {
+type ValueMarkType = (typeof values)[number]["icon"];
+
+export function ValueMark({ type }: { type: ValueMarkType }) {
   return (
     <svg className={`value-mark value-mark--${type}`} viewBox="0 0 120 120" aria-hidden="true">
       <circle className="value-mark__surface" cx="60" cy="60" r="48" />
-      {type === "origin" && <><circle cx="60" cy="60" r="25" /><circle cx="60" cy="60" r="13" /><circle className="value-mark__solid" cx="60" cy="60" r="4" /></>}
-      {type === "growth" && <><path d="M60 84V40" /><path d="M60 62C47 60 42 52 42 43c12 0 18 6 18 19Z" /><path d="M60 72c15-1 22-9 22-21-14 0-22 7-22 21Z" /></>}
-      {type === "strength" && <><path d="M27 71c10-24 24-25 33-5 9-20 23-19 33 5" /><path d="M33 78h54" /><circle className="value-mark__solid" cx="27" cy="71" r="3" /><circle className="value-mark__solid" cx="93" cy="71" r="3" /></>}
-      {type === "possibility" && <><path d="M27 61c10-22 24-22 33 0s23 22 33 0" /><path d="M27 61c10 22 24 22 33 0s23-22 33 0" /></>}
-      {type === "legacy" && <><path d="M60 88c-22 0-34-13-34-29 0-18 14-31 32-31 20 0 34 15 34 34 0 15-11 27-27 27-15 0-25-10-25-23 0-12 9-21 21-21 10 0 17 7 17 16 0 8-6 14-14 14-6 0-10-4-10-9" /></>}
+      {type === "origin" && <><circle cx="60" cy="60" r="31" /><circle cx="60" cy="60" r="17" /><circle className="value-mark__solid" cx="60" cy="60" r="5" /></>}
+      {type === "growth" && <><circle cx="60" cy="60" r="39" /><path d="M60 89V43" /><path d="M60 62C48 61 42 55 41 44c12 0 19 6 19 18Z" /><path d="M60 72c14-1 22-9 22-22-14 0-22 8-22 22Z" /><path d="M60 82c-10-1-16-7-16-16 10 0 16 6 16 16Z" /></>}
+      {type === "strength" && <><circle cx="60" cy="60" r="39" /><path d="M25 70h70M25 78h70" /><path d="M34 83V49M86 83V49" /><path d="M34 54c7 8 15 12 26 12s19-4 26-12" /><path d="M42 70V61M51 70v-5M69 70v-5M78 70v-9" /></>}
+      {type === "possibility" && <path d="M20 60C20 37 42 37 60 60C78 83 100 83 100 60C100 37 78 37 60 60C42 83 20 83 20 60Z" />}
+      {type === "legacy" && <><path d="M88 45c-8-13-24-19-39-14-19 6-29 27-21 45 8 19 31 27 49 16" /><path d="M86 72c4-14-4-29-18-34-15-5-31 3-36 18-5 14 3 29 17 34" /><path d="M48 77c-7-8-5-21 4-27 10-6 23-2 28 8 4 9 0 19-8 24" /><path d="M55 68c0-7 6-12 13-11 7 1 11 8 8 14" /></>}
     </svg>
   );
 }
@@ -69,9 +73,10 @@ export function Values() {
     <section className="values values-refined" id="values" aria-labelledby="values-title">
       <div className="frame">
         <header className="values-refined__heading">
-          <p className="eyebrow">What guides us</p>
-          <h2 id="values-title">How we build matters as much as what we build.</h2>
+          <p className="eyebrow">Our core values</p>
+          <h2 id="values-title">Guided by values. Driven by <em>impact.</em></h2>
           <p>These principles shape the choices we make, the companies we nurture, and the things we choose not to compromise.</p>
+          <SectionDivider />
         </header>
 
         <ol className="values-sequence">

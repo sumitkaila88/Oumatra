@@ -5,7 +5,6 @@ export function Manifesto() {
       <div className="frame">
         <p><span>One</span> purpose.</p>
         <p><span>Many</span> companies.</p>
-        <p><span>Endless</span> possibilities.</p>
         <p>Built for generations.</p>
       </div>
     </section>
