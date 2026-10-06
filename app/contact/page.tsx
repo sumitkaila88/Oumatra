@@ -26,7 +26,11 @@ export default function ContactPage() {
           <div className="contact-wire__wave" aria-hidden="true">{[12,22,36,54,78,108,78,54,36,22,12].map((height,index)=><i key={`${height}-${index}`} style={{height}} />)}</div>
           <p className="contact-wire__label" id="contact-pathway-title">Write to us</p>
           <a className="contact-wire__email" href={`mailto:${siteConfig.contactEmail}`}><span>{siteConfig.contactEmail}</span><b aria-hidden="true">→</b></a>
-          <div className="contact-wire__presence"><div><span>Registered presence</span><address>Gurgaon, Haryana</address></div></div>
+          <div className="contact-wire__presence">
+            
+            <div><span>Registered presence</span><address>104-D, Palam Vihar, Near Sunny Sweets, Ambala Cantt, Haryana 133001</address></div>
+            <div><span>Also have presence in</span><address>Gurgaon, Haryana</address></div>
+          </div>
         </article>
       </div>
     </section>
